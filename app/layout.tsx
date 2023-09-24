@@ -1,22 +1,20 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import "./globals.css";
+import type { Metadata } from "next";
+import "@fontsource-variable/montserrat";
 
 export const metadata: Metadata = {
-  title: 'Laura Lam',
-  description: 'Software Developer',
-}
+  title: "Laura Lam",
+  description: "Software Developer",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={inter.className}>
-      <body className='bg-gray-950'>{children}</body>
+    <html lang="en">
+      <body className="bg-licorice">{children}</body>
     </html>
-  )
+  );
 }
