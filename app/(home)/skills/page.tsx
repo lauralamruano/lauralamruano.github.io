@@ -25,8 +25,8 @@ import italy from "../../../assets/icons/italy.png";
 
 const SkillsPage = () => {
   return (
-    <main className="w-full ms-4 px-8">
-      <h1 className="text-thulian_pink-700  text-2xl font-bold py-5">Skills</h1>
+    <main className="flex flex-col w-full px-8 mx-4 lg:my-12">
+      <h1 className="text-thulian_pink-500  text-3xl font-bold py-5">Skills</h1>
       <section className="w-full py-5">
         <h2 className="text-thulian_pink-700 text-1xl font-bold">
           Programming languages:
@@ -248,7 +248,7 @@ const SkillsPage = () => {
       <section>
         <h1 className="text-thulian_pink-700  text-1xl font-bold">
           Education</h1>
-          <p>University of Cinfuegos, City.</p>
+          <p>University of Cienfuegos</p>
         <p className="tex-sm text-thulian_pink-300">Carlos Rafael Rodriguez.
         </p>
         <p  >Computer Engineer</p>

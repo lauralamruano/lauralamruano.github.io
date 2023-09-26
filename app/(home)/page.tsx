@@ -1,22 +1,24 @@
 import React from "react";
 import Image from "next/image";
 
-import me from "../../assets/images/r.jpg";
+import me from "../../assets/images/avatar.png";
 import github from "../../assets/icons/icons8-github-24.png";
 import whatsapp from "../../assets/icons/icons8-whatsapp-30.png";
 import gmail from "../../assets/icons/icons8-gmail-100.png";
 import insta from "../../assets/icons/icons8-instagram-50.png";
+import ilustracion from "../../assets/images/ilustracion.png";
+
 
 const HomePage = () => {
   return (
-    <main className="flex flex-col ml-4 mr-3 px-8">
-      <h1 className=" text-thulian_pink-500 text-3xl font-semibold py-2">
+    <main className="flex flex-col mx-4 px-8 lg:my-12 lg:w-full">
+      <h1 className=" text-thulian_pink-500 text-3xl font-bold py-5">
         Laura Lam
       </h1>
-      <p>Hi, I am Laura and this is my profile</p>
-      <div className="flex flex-row items-center py-8 ">
+      <p className="text-sm"><span className="text-thulian_pink-500 text-lg">Welcome!</span> I am Laura and this is my profile</p>
+      <div className="flex flex-row items-center py-8 lg:first-letter lg:gap-x-10">
         <Image
-          className="rounded-full h-28 w-28 object-cover object-center"
+          className="rounded-full h-28 w-28 object-cover object-center lg:ms-10 lg:h-40 lg:w-40"
           src={me}
           alt="Picture of the author"
           quality={100}
@@ -25,7 +27,7 @@ const HomePage = () => {
         <div className="flex flex-col px-3">
           <div className="flex flex-row px-2  items-center">
             <Image
-              className="rounded-full h-6 w-6"
+              className="rounded-full h-6 w-6 lg:h-8 lg:w-auto lg:object-cover lg:object-center lg:rounded-full"
               src={github}
               alt="Picture of the author"
             />
@@ -38,7 +40,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-row px-2  items-center">
             <Image
-              className="rounded-full h-6 w-6"
+              className="rounded-full h-6 w-6 lg:h-8 lg:w-auto lg:object-cover lg:object-center lg:rounded-full"
               src={gmail}
               alt="Picture of the author"
             />
@@ -51,7 +53,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-row px-2 py-1 items-center">
             <Image
-              className="rounded-full h-6 w-6"
+              className="rounded-full h-6 w-6 lg:h-8 lg:w-auto lg:object-cover lg:object-center lg:rounded-full"
               src={whatsapp}
               alt="Picture of the author"
             />
@@ -64,7 +66,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-row px-2  items-center">
             <Image
-              className="rounded-full h-6 w-6"
+              className="rounded-full h-6 w-6 lg:h-8 lg:w-auto lg:object-cover lg:object-center lg:rounded-full"
               src={insta}
               alt="Picture of the author"
             />
@@ -77,7 +79,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <p className="py-4">
+      <p className="py-4 text-sm lg:text-base">
         Highly trained and motivated{" "}
         <span className="text-thulian_pink-400">Computer Engineer</span> with
         experience in
@@ -87,7 +89,7 @@ const HomePage = () => {
       </p>
       <hr className=" bg-tutext-thulian_pink-800" />
       <section>
-        <p className="text-1xl py-4">
+        <p className="text-sm py-4 lg:text-base">
           I am passionate about the world of
           <span className="text-thulian_pink-400"> design</span> and{" "}
           <span className="text-thulian_pink-400"> Arts</span>. I have always
@@ -100,7 +102,7 @@ const HomePage = () => {
       </section>
       <hr className=" bg-tutext-thulian_pink-700" />
       <section>
-        <p className="text-1xl py-4">
+        <p className="text-sm py-4 lg:text-base">
           <span className="text-thulian_pink-400">Computer science</span> has
           given me a set of{" "}
           <span className="text-thulian_pink-400"> technical tools</span> to take
@@ -110,14 +112,14 @@ const HomePage = () => {
           one of my projects.
         </p>
         <hr className=" bg-tutext-thulian_pink-800" />
-        <p className="text-1xl py-4">
+        <p className="text-sm py-4 lg:text-base">
           I am constantly learning and updating myself on the latest trends in
           <span className="text-thulian_pink-400"> design</span> and <span className="text-thulian_pink-400">programming</span>. This allows me to
           always be prepared to implement unique and visually{" "}
           <span className="text-thulian_pink-400"> attractive solutions</span>.
         </p>
         <hr className=" bg-tutext-thulian_pink-700" />
-        <p className="text-1xl py-4">
+        <p className="text-sm py-4 lg:text-base">
           My motivation and commitment make me an{" "}
           <span className="text-thulian_pink-400"> excellent collaborator</span> in a work team. I like to work
           collaboratively with others professionals to achieve the{" "}
