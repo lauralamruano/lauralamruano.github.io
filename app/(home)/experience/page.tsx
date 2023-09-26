@@ -10,38 +10,6 @@ const Experience = () => {
         Experience
       </h1>
       <ExperienceItem
-        company={"JMRL"}
-        date={"September 2023"}
-        position={"Marketing"}
-        tasks={
-          <>
-            <p className="text-sm ml-3 mb-1 lg:text-base">
-              {" "}
-              . Analysis of <span className="text-thulian_pink-400">market needs</span>, trends and creative idea development.
-            </p>
-            <p className="text-sm ml-3 mb-1 lg:text-base">
-              . <span className="text-thulian_pink-400">Design</span> and{" "}
-              <span className="text-thulian_pink-400">management</span> of
-              plans, offline/online marketing activities
-            </p>
-            <p className="text-sm ml-3 mb-1 lg:text-base">
-              . <span className="text-thulian_pink-400">Communication management</span> and{" "}
-              <span className="text-thulian_pink-400">marketing plan</span> in traditional media and digital
-              platforms.
-            </p>
-            <p className="text-sm ml-3 mb-1 lg:text-base">
-              . Design and implementation of online <span className="text-thulian_pink-400">marketing plans</span>{" "}
-              for clients from various sectors.
-            </p>
-            <p className="text-sm ml-3 mb-1 lg:text-base">
-              . Analysis of the competition, <span className="text-thulian_pink-400"> market study </span> and
-              trends in digital platforms.
-            </p>
-          </>
-        }
-      />
-      <hr className=" bg-tutext-thulian_pink-700 pb-2" />
-      <ExperienceItem
         company={"ANGELS PETS"}
         date={"January 2023 - Present"}
         position={"Community Manager"}
@@ -77,6 +45,40 @@ const Experience = () => {
           </>
         }
       />
+      <hr className=" bg-tutext-thulian_pink-700 pb-2" />
+      <ExperienceItem
+        company={"JMRL"}
+        date={"September 2023"}
+        position={"Marketing"}
+        tasks={
+          <>
+            <p className="text-sm ml-3 mb-1 lg:text-base">
+              {" "}
+              . Analysis of <span className="text-thulian_pink-400">market needs</span>, trends and creative idea development.
+            </p>
+            <p className="text-sm ml-3 mb-1 lg:text-base">
+              . <span className="text-thulian_pink-400">Design</span> and{" "}
+              <span className="text-thulian_pink-400">management</span> of
+              plans, offline/online marketing activities
+            </p>
+            <p className="text-sm ml-3 mb-1 lg:text-base">
+              . <span className="text-thulian_pink-400">Communication management</span> and{" "}
+              <span className="text-thulian_pink-400">marketing plan</span> in traditional media and digital
+              platforms.
+            </p>
+            <p className="text-sm ml-3 mb-1 lg:text-base">
+              . Design and implementation of online <span className="text-thulian_pink-400">marketing plans</span>{" "}
+              for clients from various sectors.
+            </p>
+            <p className="text-sm ml-3 mb-1 lg:text-base">
+              . Analysis of the competition, <span className="text-thulian_pink-400"> market study </span> and
+              trends in digital platforms.
+            </p>
+          </>
+        }
+      />
+
+
       <hr className=" bg-tutext-thulian_pink-700 pb-2" />
       <ExperienceItem
         company={"Recharge Phones"}
