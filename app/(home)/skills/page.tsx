@@ -234,7 +234,7 @@ const SkillsPage = () => {
             src={britian}
             alt="Picture of the author"
           />
-          English(medium)
+          English(intermediate)
         </div>
         <div className="flex flex-row">
           <Image
