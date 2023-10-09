@@ -9,7 +9,7 @@ const Experience = () => {
       <h1 className="font-bold text-thulian_pink-500 text-3xl py-5">
         Experience
       </h1>
-      <ExperienceItem company={"Solutions"} date={"October 2023 - Present"} position={"QA Tester"} tasks={<>
+      <ExperienceItem company={"A11 y Solutions"} date={"October 2023 - Present"} position={"QA Tester"} tasks={<>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Executes <span className="text-thulian_pink-400">test cases</span> under varying circumstances.</p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Documents and evaluates <span className="text-thulian_pink-400">test results</span>.</p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Detects, logs, and reports program <span className="text-thulian_pink-400">bugs</span> and <span className="text-thulian_pink-400">glitches</span>.</p>
