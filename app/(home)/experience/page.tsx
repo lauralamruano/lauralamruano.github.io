@@ -10,11 +10,11 @@ const Experience = () => {
         Experience
       </h1>
       <ExperienceItem company={"Solutions"} date={"October 2023 - Present"} position={"QA Tester"} tasks={<>
-        <p> • Executes <span className="text-thulian_pink-400">test cases</span> under varying circumstances.</p>
-        <p> • Documents and evaluates <span className="text-thulian_pink-400">test results</span>.</p>
-        <p> • Detects, logs, and reports program <span className="text-thulian_pink-400">bugs</span> and <span className="text-thulian_pink-400">glitches</span>.</p>
-        <p> • Tracks defects and helps <span className="text-thulian_pink-400">troubleshoot errors</span>.</p>
-        <p> • Reviews <span className="text-thulian_pink-400">test procedures</span> and <span className="text-thulian_pink-400">develops test scripts</span>.</p></>} />
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Executes <span className="text-thulian_pink-400">test cases</span> under varying circumstances.</p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Documents and evaluates <span className="text-thulian_pink-400">test results</span>.</p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Detects, logs, and reports program <span className="text-thulian_pink-400">bugs</span> and <span className="text-thulian_pink-400">glitches</span>.</p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Tracks defects and helps <span className="text-thulian_pink-400">troubleshoot errors</span>.</p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Reviews <span className="text-thulian_pink-400">test procedures</span> and <span className="text-thulian_pink-400">develops test scripts</span>.</p></>} />
         <hr className=" bg-tutext-thulian_pink-700 pb-2" />
       <ExperienceItem
         company={"ANGELS PETS"}
