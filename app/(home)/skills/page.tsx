@@ -219,7 +219,7 @@ const SkillsPage = () => {
         </ul>
       </section>
       <section className="ms-4 flex flex-col py-5 w-full">
-        <h2 className="text-thulian_pink-700  text-1xl font-bold">Lenguages</h2>
+        <h2 className="text-thulian_pink-700  text-1xl font-bold">Languages</h2>
         <div className="flex flex-row">
           <Image
             className="h-6 w-6 mr-1"
@@ -251,7 +251,7 @@ const SkillsPage = () => {
           <p>University of Cienfuegos</p>
         <p className="tex-sm text-thulian_pink-300">Carlos Rafael Rodriguez.
         </p>
-        <p  >Computer Engineer</p>
+        <p  >Computer Engineer (in progress)</p>
       </section>
     </main>
   );
