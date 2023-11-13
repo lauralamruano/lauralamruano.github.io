@@ -1,21 +1,25 @@
 import React from "react";
 
 import { ExperienceItem } from "@/components/experience-item";
-import excel from "../../../assets/icons/flutter.png";
-
 const Experience = () => {
   return (
     <main className="flex flex-col w-full px-8 mx-4 lg:my-12">
       <h1 className="font-bold text-thulian_pink-500 text-3xl py-5">
         Experience
       </h1>
-      <ExperienceItem company={"A11 y Solutions"} date={"October 2023 - Present"} position={"QA Tester"} tasks={<>
+      <ExperienceItem company={"A11 y Solutions"} date={" November - Present"} position={"Accesibility Tester"} tasks={<>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Evaluation of compliance with <span className="text-thulian_pink-400">accessibility standards</span>. </p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • <span className="text-thulian_pink-400">Testing</span> with <span className="text-thulian_pink-400">assistive technologies</span>.</p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • <span className="text-thulian_pink-400">Analysis</span> of navigation and interaction.</p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Facilitating <span className="text-thulian_pink-400">usability testing</span> with individuals having <span className="text-thulian_pink-400">disabilities</span>.</p>
+        <p className="text-sm ml-3 mb-1 lg:text-base"> • Creating <span className="text-thulian_pink-400">detailed reports</span>.</p></>} />
+      <ExperienceItem company={""} date={"October 2023"} position={"Functional Tester"} tasks={<>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Executes <span className="text-thulian_pink-400">test cases</span> under varying circumstances.</p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Documents and evaluates <span className="text-thulian_pink-400">test results</span>.</p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Detects, logs, and reports program <span className="text-thulian_pink-400">bugs</span> and <span className="text-thulian_pink-400">glitches</span>.</p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Tracks defects and helps <span className="text-thulian_pink-400">troubleshoot errors</span>.</p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Reviews <span className="text-thulian_pink-400">test procedures</span> and <span className="text-thulian_pink-400">develops test scripts</span>.</p></>} />
-        <hr className=" bg-tutext-thulian_pink-700 pb-2" />
+      <hr className=" bg-tutext-thulian_pink-700 pb-2" />
       <ExperienceItem
         company={"ANGELS PETS"}
         date={"January 2023 - September 2023"}
