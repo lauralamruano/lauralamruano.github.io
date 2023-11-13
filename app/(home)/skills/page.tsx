@@ -285,7 +285,7 @@ const SkillsPage = () => {
                 src={bloc}
                 alt="Picture of the author"
               />
-              BloC pattern
+              BLoC pattern
             </div>
           </li>
           <li className="mr-2.5 mt-2">
