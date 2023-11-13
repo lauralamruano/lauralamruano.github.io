@@ -8,7 +8,7 @@ import dart from "../../../assets/icons/dart.png";
 import figma from "../../../assets/icons/figma.png";
 import git from "../../../assets/icons/git.png";
 import html from "../../../assets/icons/html.png";
-import flask from "../../../assets/icons/icons8-flask-48.png";
+import trello from "../../../assets/icons/trello.png";
 import javascript from "../../../assets/icons/javascript.png";
 import postman from "../../../assets/icons/postman-icon.png";
 import python from "../../../assets/icons/python.png";
@@ -22,6 +22,13 @@ import tailwind from "../../../assets/icons/tailwindcss.png";
 import spain from "../../../assets/icons/spain.png";
 import britian from "../../../assets/icons/great-britain.png";
 import italy from "../../../assets/icons/italy.png";
+import chanty from "../../../assets/icons/chanty.png";
+import nvda from "../../../assets/icons/nvda.png";
+import veryGood from "../../../assets/icons/very-good.png";
+import  aws from "../../../assets/icons/aws.png";
+import  bloc from "../../../assets/icons/bloc.png";
+import  dependency from "../../../assets/icons/dependency_injection.webp";
+
 
 const SkillsPage = () => {
   return (
@@ -106,33 +113,6 @@ const SkillsPage = () => {
       </section>
       <section className="py-5">
         <h2 className="text-thulian_pink-700  text-1xl font-bold">
-          Operating systems:
-        </h2>
-        <ul className="ms-4 flex flex-wrap">
-          <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={windows}
-                alt="Picture of the author"
-              />
-              Windows
-            </div>
-          </li>
-          <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={macos}
-                alt="Picture of the author"
-              />
-              Macos
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section className="py-5">
-        <h2 className="text-thulian_pink-700  text-1xl font-bold">
           Tools and frameworks:
         </h2>
         <ul className="ms-4 flex flex-wrap">
@@ -200,6 +180,16 @@ const SkillsPage = () => {
             <div className="flex flex-row">
               <Image
                 className="h-6 w-6 mr-1"
+                src={aws}
+                alt="Picture of the author"
+              />
+              Amazon Web Services
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
                 src={postman}
                 alt="Picture of the author"
               />
@@ -210,10 +200,102 @@ const SkillsPage = () => {
             <div className="flex flex-row">
               <Image
                 className="h-6 w-6 mr-1"
+                src={nvda}
+                alt="Picture of the author"
+              />
+              NVDA
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
                 src={tailwind}
                 alt="Picture of the author"
               />
               Tailwind
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={trello}
+                alt="Picture of the author"
+              />
+              Trello
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={chanty}
+                alt="Picture of the author"
+              />
+              Chanty
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section className="py-5">
+        <h2 className="text-thulian_pink-700  text-1xl font-bold">
+          Operating systems:
+        </h2>
+        <ul className="ms-4 flex flex-wrap">
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={windows}
+                alt="Picture of the author"
+              />
+              Windows
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={macos}
+                alt="Picture of the author"
+              />
+              MacOS
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section className="w-full py-5">
+        <h2 className="text-thulian_pink-700  text-1xl font-bold">Patterns of design and best practices:</h2>
+        <ul className="ms-4 flex flex-wrap">
+        <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={veryGood}
+                alt="Picture of the author"
+              />
+              Very Good Architecture
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={bloc}
+                alt="Picture of the author"
+              />
+              BloC pattern
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={dependency}
+                alt="Picture of the author"
+              />
+              Dependency injection
             </div>
           </li>
         </ul>
