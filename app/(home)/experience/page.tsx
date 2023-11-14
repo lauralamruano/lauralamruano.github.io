@@ -7,7 +7,7 @@ const Experience = () => {
       <h1 className="font-bold text-thulian_pink-500 text-3xl py-5">
         Experience
       </h1>
-      <ExperienceItem company={"A11 y Solutions"} date={" November - Present"} position={"Accesibility Tester"} tasks={<>
+      <ExperienceItem company={"A11 y Solutions"} date={" November 2023 - Present"} position={"Accesibility Tester"} tasks={<>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • Evaluation of compliance with <span className="text-thulian_pink-400">accessibility standards</span>. </p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • <span className="text-thulian_pink-400">Testing</span> with <span className="text-thulian_pink-400">assistive technologies</span>.</p>
         <p className="text-sm ml-3 mb-1 lg:text-base"> • <span className="text-thulian_pink-400">Analysis</span> of navigation and interaction.</p>
