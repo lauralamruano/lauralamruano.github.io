@@ -22,12 +22,18 @@ import tailwind from "../../../assets/icons/tailwindcss.png";
 import spain from "../../../assets/icons/spain.png";
 import britian from "../../../assets/icons/great-britain.png";
 import italy from "../../../assets/icons/italy.png";
-import chanty from "../../../assets/icons/chanty.png";
 import nvda from "../../../assets/icons/nvda.png";
 import veryGood from "../../../assets/icons/very-good.png";
 import  aws from "../../../assets/icons/aws.png";
 import  bloc from "../../../assets/icons/bloc.png";
 import  dependency from "../../../assets/icons/dependency_injection.webp";
+import django from "@/assets/icons/djang.png"
+import material from '@/assets/icons/material-ui.png'
+import sass from '@/assets/icons/sass.png'
+import daisy from '@/assets/icons/daisyui.png'
+import flask from '@/assets/icons/flask-horizontal.png'
+import postgrest from '@/assets/icons/postgresql.png'
+
 
 
 const SkillsPage = () => {
@@ -107,6 +113,16 @@ const SkillsPage = () => {
                 alt="Picture of the author"
               />
               MySQL
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row items-center">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={postgrest}
+                alt="Postgrest"
+              />
+              PostgretSQL
             </div>
           </li>
         </ul>
@@ -230,10 +246,50 @@ const SkillsPage = () => {
             <div className="flex flex-row">
               <Image
                 className="h-6 w-6 mr-1"
-                src={chanty}
-                alt="Picture of the author"
+                src={django}
+                alt="Django"
               />
-              Chanty
+              Django
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={material}
+                alt="Material Ui"
+              />
+              Material Ui
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={sass}
+                alt="Saass"
+              />
+              Saass
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={daisy}
+                alt="DaysiUI"
+              />
+              DaysiUI 
+            </div>
+          </li>
+          <li className="mr-2.5 mt-2">
+            <div className="flex flex-row">
+              <Image
+                className="h-6 w-6 mr-1"
+                src={flask}
+                alt="Flask"
+              />
+               Flask 
             </div>
           </li>
         </ul>
