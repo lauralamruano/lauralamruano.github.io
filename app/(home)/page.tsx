@@ -86,46 +86,7 @@ const HomePage = () => {
         <span className="text-thulian_pink-400"> software development</span>,
         programming and frontend design. Excellent teamwork skills, effective
         communication, and problem-solving skills.
-      </p>
-      <hr className=" bg-tutext-thulian_pink-800" />
-      <section>
-        <p className="text-sm py-4 lg:text-base">
-          I am passionate about the world of
-          <span className="text-thulian_pink-400"> design</span> and{" "}
-          <span className="text-thulian_pink-400"> Arts</span>. I have always
-          enjoyed programming and creation of
-          <span className="text-thulian_pink-400"> websites</span> and{" "}
-          <span className="text-thulian_pink-400"> applications</span>, which has
-          led me to specialize in{" "}
-          <span className="text-thulian_pink-400">frontend development</span>.
-        </p>
-      </section>
-      <hr className=" bg-tutext-thulian_pink-700" />
-      <section>
-        <p className="text-sm py-4 lg:text-base">
-          <span className="text-thulian_pink-400">Computer science</span> has
-          given me a set of{" "}
-          <span className="text-thulian_pink-400"> technical tools</span> to take
-          my passion for design and arts to another level. I I love to think
-          creatively and outside of the conventional, which makes me allows us
-          to offer personalized and <span className="text-thulian_pink-400">innovative solutions</span> for each
-          one of my projects.
-        </p>
-        <hr className=" bg-tutext-thulian_pink-800" />
-        <p className="text-sm py-4 lg:text-base">
-          I am constantly learning and updating myself on the latest trends in
-          <span className="text-thulian_pink-400"> design</span> and <span className="text-thulian_pink-400">programming</span>. This allows me to
-          always be prepared to implement unique and visually{" "}
-          <span className="text-thulian_pink-400"> attractive solutions</span>.
-        </p>
-        <hr className=" bg-tutext-thulian_pink-700" />
-        <p className="text-sm py-4 lg:text-base">
-          My motivation and commitment make me an{" "}
-          <span className="text-thulian_pink-400"> excellent collaborator</span> in a work team. I like to work
-          collaboratively with others professionals to achieve the{" "}
-          <span className="text-thulian_pink-400"> best possible results</span>.
-        </p>
-      </section>
+      </p> 
     </main>
   );
 };
