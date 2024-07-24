@@ -267,7 +267,7 @@ const SkillsPage = () => {
               <Image
                 className="h-6 w-6 mr-1"
                 src={sass}
-                alt="Saass"
+                alt="Sass"
               />
               Saass
             </div>
