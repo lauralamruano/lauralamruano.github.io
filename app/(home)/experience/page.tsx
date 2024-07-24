@@ -8,8 +8,8 @@ const Experience = () => (
       Experience
     </h1>
     <ExperienceItem
-      company={"A11 y Solutions"}
-      date={"May 2024 - Present"}
+      company={"A11 y Solutions September 2023 - Present"}
+      date={''}
       position={"Frontend Developer"}
       tasks={
         <>
@@ -57,7 +57,7 @@ const Experience = () => (
     ></ExperienceItem>
     <ExperienceItem
       company={""}
-      date={" November 2023 - May 2024"}
+      date={""}
       position={"Accesibility Tester"}
       tasks={
         <>
@@ -101,7 +101,7 @@ const Experience = () => (
     />
     <ExperienceItem
       company={""}
-      date={"October 2023"}
+      date={""}
       position={"Functional Tester"}
       tasks={
         <>
