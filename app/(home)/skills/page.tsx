@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 import flutter from "../../../assets/icons/flutter.png";
-import android from "../../../assets/icons/android.png";
 import css from "../../../assets/icons/css.png";
 import dart from "../../../assets/icons/dart.png";
 import figma from "../../../assets/icons/figma.png";
@@ -12,7 +11,6 @@ import trello from "../../../assets/icons/trello.png";
 import javascript from "../../../assets/icons/javascript.png";
 import postman from "../../../assets/icons/postman-icon.png";
 import python from "../../../assets/icons/python.png";
-import vscode from "../../../assets/icons/vscode.png";
 import windows from "../../../assets/icons/windows.png";
 import macos from "../../../assets/icons/icons8-macos-30.png";
 import react from "../../../assets/icons/icons8-react-16.png";
@@ -22,7 +20,6 @@ import tailwind from "../../../assets/icons/tailwindcss.png";
 import spain from "../../../assets/icons/spain.png";
 import britian from "../../../assets/icons/great-britain.png";
 import italy from "../../../assets/icons/italy.png";
-import nvda from "../../../assets/icons/nvda.png";
 import veryGood from "../../../assets/icons/very-good.png";
 import  aws from "../../../assets/icons/aws.png";
 import  bloc from "../../../assets/icons/bloc.png";
@@ -143,14 +140,6 @@ const SkillsPage = () => {
             </div>
           </li>
           <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={android}
-                alt="Picture of the author"
-              />
-              Android Studio
-            </div>
           </li>
           <li className="mr-2.5 mt-2">
             <div className="flex flex-row">
@@ -163,14 +152,6 @@ const SkillsPage = () => {
             </div>
           </li>
           <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={vscode}
-                alt="Picture of the author"
-              />
-              VSCode
-            </div>
           </li>
           <li className="mr-2.5 mt-2">
             <div className="flex flex-row">
@@ -213,14 +194,6 @@ const SkillsPage = () => {
             </div>
           </li>
           <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={nvda}
-                alt="Picture of the author"
-              />
-              NVDA
-            </div>
           </li>
           <li className="mr-2.5 mt-2">
             <div className="flex flex-row">
@@ -267,7 +240,7 @@ const SkillsPage = () => {
               <Image
                 className="h-6 w-6 mr-1"
                 src={sass}
-                alt="Saass"
+                alt="Sass"
               />
               Saass
             </div>

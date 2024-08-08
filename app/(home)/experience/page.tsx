@@ -3,7 +3,7 @@ import React from "react";
 import { ExperienceItem } from "@/components/experience-item";
 
 const Experience = () => (
-  <main className="flex flex-col w-full  lg:my-12">
+  <main className="flex flex-col mx-4 px-8 lg:w-full  lg:my-12">
     <h1 className="font-bold text-thulian_pink-500 text-3xl py-5">
       Experience
     </h1>
