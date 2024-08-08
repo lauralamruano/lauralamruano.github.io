@@ -143,14 +143,6 @@ const SkillsPage = () => {
             </div>
           </li>
           <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={android}
-                alt="Picture of the author"
-              />
-              Android Studio
-            </div>
           </li>
           <li className="mr-2.5 mt-2">
             <div className="flex flex-row">
@@ -163,14 +155,6 @@ const SkillsPage = () => {
             </div>
           </li>
           <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={vscode}
-                alt="Picture of the author"
-              />
-              VSCode
-            </div>
           </li>
           <li className="mr-2.5 mt-2">
             <div className="flex flex-row">
@@ -213,14 +197,6 @@ const SkillsPage = () => {
             </div>
           </li>
           <li className="mr-2.5 mt-2">
-            <div className="flex flex-row">
-              <Image
-                className="h-6 w-6 mr-1"
-                src={nvda}
-                alt="Picture of the author"
-              />
-              NVDA
-            </div>
           </li>
           <li className="mr-2.5 mt-2">
             <div className="flex flex-row">
