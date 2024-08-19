@@ -9,7 +9,7 @@ const Experience = () => (
     </h1>
     <ExperienceItem
       company={"A11 y Solutions September 2023 - Present"}
-      date={''}
+      date={"A11y Bot"}
       position={"Frontend Developer"}
       tasks={
         <>
@@ -51,6 +51,62 @@ const Experience = () => (
             create{" "}
             <span className="text-thulian_pink-400">intuitive layouts</span> and
             features, enhancing usability and accessibility standards.
+          </p>
+        </>
+      }
+    ></ExperienceItem>
+    <ExperienceItem
+      company={""}
+      date={"Accesibility Detector"}
+      position={"Product Analyst"}
+      tasks={
+        <>
+          <p className="text-sm ml-3 mb-1 lg:text-base">
+            • <span className="text-thulian_pink-400">Conduct</span>{" "}
+            <span className="text-thulian_pink-400">market research</span> to
+            identify key{" "}
+            <span className="text-thulian_pink-400">accessibility issues</span>{" "}
+            in web applications.
+          </p>
+
+          <p className="text-sm ml-3 mb-1 lg:text-base">
+            • <span className="text-thulian_pink-400">Collaborate</span> with{" "}
+            <span className="text-thulian_pink-400">
+              cross-functional teams
+            </span>{" "}
+            to define product requirements and ensure alignment with{" "}
+            <span className="text-thulian_pink-400">WCAG 2.2 standards</span>.
+          </p>
+
+          <p className="text-sm ml-3 mb-1 lg:text-base">
+            • <span className="text-thulian_pink-400">Analyze</span>{" "}
+            <span className="text-thulian_pink-400">user feedback</span> and
+            data to enhance the product's ability to detect and report
+            accessibility issues.
+          </p>
+
+          <p className="text-sm ml-3 mb-1 lg:text-base">
+            • <span className="text-thulian_pink-400">Develop</span> product
+            documentation and{" "}
+            <span className="text-thulian_pink-400">user guides</span> for the
+            accessibility issue detector.
+          </p>
+
+          <p className="text-sm ml-3 mb-1 lg:text-base">
+            • <span className="text-thulian_pink-400">Participate</span> in{" "}
+            <span className="text-thulian_pink-400">stakeholder meetings</span>{" "}
+            to present findings and gather input.
+          </p>
+
+          <p className="text-sm ml-3 mb-1 lg:text-base">
+            • <span className="text-thulian_pink-400">Create</span> requirements
+            and functionalities, leveraging{" "}
+            <span className="text-thulian_pink-400">development skills</span>{" "}
+            and{" "}
+            <span className="text-thulian_pink-400">
+              accessibility experience
+            </span>
+            .
           </p>
         </>
       }
