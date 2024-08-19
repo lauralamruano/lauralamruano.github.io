@@ -242,7 +242,7 @@ const SkillsPage = () => {
                 src={sass}
                 alt="Sass"
               />
-              Saass
+              Sass
             </div>
           </li>
           <li className="mr-2.5 mt-2">
