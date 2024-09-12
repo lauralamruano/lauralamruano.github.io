@@ -362,7 +362,7 @@ const SkillsPage = () => {
           <p>University of Cienfuegos</p>
         <p className="tex-sm text-thulian_pink-300">Carlos Rafael Rodriguez.
         </p>
-        <p  >Computer Engineer (in progress)</p>
+        <p  >Computer Engineer </p>
       </section>
     </main>
   );
