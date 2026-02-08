@@ -1,57 +1,71 @@
 import React from "react";
-
 import { ExperienceItem } from "@/components/experience-item";
 
 const Experience = () => (
-  <main className="flex flex-col mx-4 px-8 lg:w-full  lg:my-12">
-    <h1 className="font-bold text-thulian_pink-500 text-3xl py-5">
-      Experience
-    </h1>
+  <main className="lg:ml-72 flex-1 relative">
+    <section className="px-6 md:px-12 lg:px-24 py-24">
+      <div className="max-w-4xl">
+        <h1 className="section-heading">Professional Experience</h1>
     <ExperienceItem
       company={"A11 y Solutions September 2023 - Present"}
       date={"A11y Bot"}
       position={"Frontend Developer"}
       tasks={
         <>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Developed an{" "}
-            <span className="text-thulian_pink-400">accessibility-focused</span>{" "}
-            bot interface using{" "}
-            <span className="text-thulian_pink-400">React</span>, enhancing user
-            experience for individuals with{" "}
-            <span className="text-thulian_pink-400">disabilities</span>.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Implemented{" "}
-            <span className="text-thulian_pink-400">state management</span> with{" "}
-            <span className="text-thulian_pink-400">Redux</span> to streamline
-            data flow and improve{" "}
-            <span className="text-thulian_pink-400">
-              application performance
-            </span>
-            .
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Integrated <span className="text-thulian_pink-400">Axios</span>{" "}
-            for seamless{" "}
-            <span className="text-thulian_pink-400">API interactions</span>,
-            ensuring efficient data retrieval and management.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Designed and enforced{" "}
-            <span className="text-thulian_pink-400">
-              authentication protocols
-            </span>{" "}
-            with <span className="text-thulian_pink-400">Auth0</span>, ensuring
-            secure user access and data protection.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Collaborated with{" "}
-            <span className="text-thulian_pink-400">UX/UI designers</span> to
-            create{" "}
-            <span className="text-thulian_pink-400">intuitive layouts</span> and
-            features, enhancing usability and accessibility standards.
-          </p>
+          <div className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
+            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
+              Developed an{" "}
+              <span className="text-primary">accessibility-focused</span>{" "}
+              bot interface using{" "}
+              <span className="text-primary">React</span>, enhancing user
+              experience for individuals with{" "}
+              <span className="text-primary">disabilities</span>.
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
+            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
+              Implemented{" "}
+              <span className="text-primary">state management</span> with{" "}
+              <span className="text-primary">Redux</span> to streamline
+              data flow and improve{" "}
+              <span className="text-primary">
+                application performance
+              </span>
+              .
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
+            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
+              Integrated <span className="text-primary">Axios</span>{" "}
+              for seamless{" "}
+              <span className="text-primary">API interactions</span>,
+              ensuring efficient data retrieval and management.
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
+            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
+              Designed and enforced{" "}
+              <span className="text-primary">
+                authentication protocols
+              </span>{" "}
+              with <span className="text-primary">Auth0</span>, ensuring
+              secure user access and data protection.
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
+            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
+              Collaborated with{" "}
+              <span className="text-primary">UX/UI designers</span> to
+              create{" "}
+              <span className="text-primary">intuitive layouts</span> and
+              features, enhancing usability and accessibility standards.
+            </p>
+          </div>
         </>
       }
     ></ExperienceItem>
@@ -68,7 +82,6 @@ const Experience = () => (
             <span className="text-thulian_pink-400">accessibility issues</span>{" "}
             in web applications.
           </p>
-
           <p className="text-sm ml-3 mb-1 lg:text-base">
             • <span className="text-thulian_pink-400">Collaborate</span> with{" "}
             <span className="text-thulian_pink-400">
@@ -77,27 +90,23 @@ const Experience = () => (
             to define product requirements and ensure alignment with{" "}
             <span className="text-thulian_pink-400">WCAG 2.2 standards</span>.
           </p>
-
           <p className="text-sm ml-3 mb-1 lg:text-base">
             • <span className="text-thulian_pink-400">Analyze</span>{" "}
             <span className="text-thulian_pink-400">user feedback</span> and
             data to enhance the product's ability to detect and report
             accessibility issues.
           </p>
-
           <p className="text-sm ml-3 mb-1 lg:text-base">
             • <span className="text-thulian_pink-400">Develop</span> product
             documentation and{" "}
             <span className="text-thulian_pink-400">user guides</span> for the
             accessibility issue detector.
           </p>
-
           <p className="text-sm ml-3 mb-1 lg:text-base">
             • <span className="text-thulian_pink-400">Participate</span> in{" "}
             <span className="text-thulian_pink-400">stakeholder meetings</span>{" "}
             to present findings and gather input.
           </p>
-
           <p className="text-sm ml-3 mb-1 lg:text-base">
             • <span className="text-thulian_pink-400">Create</span> requirements
             and functionalities, leveraging{" "}
@@ -197,8 +206,7 @@ const Experience = () => (
         </>
       }
     />
-    <hr className=" bg-tutext-thulian_pink-700 pb-2" />
-    <ExperienceItem
+        <ExperienceItem
       company={"ANGELS PETS"}
       date={"January 2023 - September 2023"}
       position={"Community Manager"}
@@ -225,15 +233,14 @@ const Experience = () => (
           </p>
           <p className="text-sm ml-3 mb-1 lg:text-base">
             • Monitor online presence of{" "}
-            <span className="text-thulian_pink-400">company’s brand</span> and
+            <span className="text-thulian_pink-400">company's brand</span> and
             engage with users,
             <span> strengthening customer relationships </span>
           </p>
         </>
       }
     />
-    <hr className=" bg-tutext-thulian_pink-700 pb-2" />
-    <ExperienceItem
+        <ExperienceItem
       company={"JMRL"}
       date={"September 2023"}
       position={"Marketing"}
@@ -271,9 +278,7 @@ const Experience = () => (
         </>
       }
     />
-
-    <hr className=" bg-tutext-thulian_pink-700 pb-2" />
-    <ExperienceItem
+        <ExperienceItem
       company={"Recharge Phones"}
       date={"April 2023 - May 2023"}
       position={"QA Tester"}
@@ -303,17 +308,12 @@ const Experience = () => (
               {" "}
               test case automation{" "}
             </span>
-            ; executed test cases and analyzed results
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            . Identified, recorded, documented, and tracked code{" "}
-            <span className="text-thulian_pink-400"> bugs </span> as they arise
-            and perform regression{" "}
-            <span className="text-thulian_pink-400"> testing</span>.
           </p>
         </>
       }
     />
+      </div>
+    </section>
   </main>
 );
 

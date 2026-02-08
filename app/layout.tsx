@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import "@fontsource-variable/montserrat";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Laura Lam",
-  description: "Software Developer",
+  title: "Laura Lam | Product Manager Portfolio",
+  description: "Senior Product Manager specializing in accessibility-focused tech solutions and user-centric product development.",
 };
 
 export default function RootLayout({
@@ -13,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-licorice">{children}</body>
+    <html lang="en" data-theme="light">
+      <body>{children}</body>
     </html>
   );
 }
