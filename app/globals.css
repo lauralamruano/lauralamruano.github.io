@@ -288,4 +288,13 @@
   .text-muted {
     color: rgb(var(--muted));
   }
+
+  /* Details/Summary styling for experience items */
+  details > summary {
+    list-style: none;
+  }
+  
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
 }

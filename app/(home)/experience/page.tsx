@@ -1,320 +1,154 @@
+'use client'
+
 import React from "react";
 import { ExperienceItem } from "@/components/experience-item";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const Experience = () => (
-  <main className="lg:ml-72 flex-1 relative">
-    <section className="px-6 md:px-12 lg:px-24 py-24">
-      <div className="max-w-4xl">
-        <h1 className="section-heading">Professional Experience</h1>
-    <ExperienceItem
-      company={"A11 y Solutions September 2023 - Present"}
-      date={"A11y Bot"}
-      position={"Frontend Developer"}
-      tasks={
-        <>
-          <div className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
-            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
-              Developed an{" "}
-              <span className="text-primary">accessibility-focused</span>{" "}
-              bot interface using{" "}
-              <span className="text-primary">React</span>, enhancing user
-              experience for individuals with{" "}
-              <span className="text-primary">disabilities</span>.
-            </p>
+const Experience = () => {
+  const { t } = useLanguage();
+  
+  return (
+    <main className="lg:ml-72 flex-1 relative">
+      <section className="px-6 md:px-12 lg:px-24 py-24">
+        <div className="max-w-4xl">
+          <h1 className="section-heading">{t.experience.title}</h1>
+          
+          {/* Timeline container */}
+          <div className="relative">
+            {/* Timeline line - desktop only */}
+            <div className="absolute left-0 md:left-40 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-800 hidden md:block"></div>
+            
+            <ExperienceItem
+              company={t.experience.positions.a11yBot.company}
+              date={t.experience.positions.a11yBot.date}
+              position={t.experience.positions.a11yBot.position}
+              skills={["Product Strategy", "WCAG Compliance", "AI/ML", "User Research"]}
+              tasks={
+                <>
+                  {t.experience.positions.a11yBot.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+            
+            <ExperienceItem
+              company="Accessibility Detector"
+              date={t.experience.positions.accessibilityDetector.date}
+              position={t.experience.positions.accessibilityDetector.position}
+              skills={["Data Analysis", "Mixpanel", "Agile/Scrum"]}
+              tasks={
+                <>
+                  {t.experience.positions.accessibilityDetector.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+            
+            <ExperienceItem
+              company="Accessibility Testing"
+              date="2020 — 2021"
+              position={t.experience.positions.accessibilityTester.position}
+              skills={["WCAG Testing", "Screen Readers", "Accessibility Audits"]}
+              tasks={
+                <>
+                  {t.experience.positions.accessibilityTester.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+            
+            <ExperienceItem
+              company="Software Testing"
+              date="2019 — 2020"
+              position={t.experience.positions.functionalTester.position}
+              skills={["Test Planning", "Bug Tracking", "Test Automation"]}
+              tasks={
+                <>
+                  {t.experience.positions.functionalTester.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+            
+            <ExperienceItem
+              company={t.experience.positions.angelsPets.company}
+              date={t.experience.positions.angelsPets.date}
+              position={t.experience.positions.angelsPets.position}
+              skills={["Social Media", "Content Strategy", "Community Management"]}
+              tasks={
+                <>
+                  {t.experience.positions.angelsPets.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+            
+            <ExperienceItem
+              company={t.experience.positions.jmrl.company}
+              date={t.experience.positions.jmrl.date}
+              position={t.experience.positions.jmrl.position}
+              skills={["Market Research", "Digital Marketing", "Content Creation"]}
+              tasks={
+                <>
+                  {t.experience.positions.jmrl.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+            
+            <ExperienceItem
+              company={t.experience.positions.rechargePhones.company}
+              date={t.experience.positions.rechargePhones.date}
+              position={t.experience.positions.rechargePhones.position}
+              skills={["QA Testing", "Test Cases", "Beta Testing"]}
+              tasks={
+                <>
+                  {t.experience.positions.rechargePhones.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+            
+            {/* Download Resume Button */}
+            <div className="flex justify-center mt-12">
+              <button className="px-6 py-3 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800 rounded-full font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:border-primary dark:hover:border-primary transition-all flex items-center gap-2 shadow-sm">
+                <span>Download Full Resume</span>
+                <span className="material-symbols-outlined text-lg">download</span>
+              </button>
+            </div>
           </div>
-          <div className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
-            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
-              Implemented{" "}
-              <span className="text-primary">state management</span> with{" "}
-              <span className="text-primary">Redux</span> to streamline
-              data flow and improve{" "}
-              <span className="text-primary">
-                application performance
-              </span>
-              .
-            </p>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
-            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
-              Integrated <span className="text-primary">Axios</span>{" "}
-              for seamless{" "}
-              <span className="text-primary">API interactions</span>,
-              ensuring efficient data retrieval and management.
-            </p>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
-            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
-              Designed and enforced{" "}
-              <span className="text-primary">
-                authentication protocols
-              </span>{" "}
-              with <span className="text-primary">Auth0</span>, ensuring
-              secure user access and data protection.
-            </p>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-primary mt-1 text-sm">check_circle</span>
-            <p className="text-sm lg:text-base" style={{ color: 'rgb(var(--muted))' }}>
-              Collaborated with{" "}
-              <span className="text-primary">UX/UI designers</span> to
-              create{" "}
-              <span className="text-primary">intuitive layouts</span> and
-              features, enhancing usability and accessibility standards.
-            </p>
-          </div>
-        </>
-      }
-    ></ExperienceItem>
-    <ExperienceItem
-      company={""}
-      date={"Accesibility Detector"}
-      position={"Product Analyst"}
-      tasks={
-        <>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • <span className="text-thulian_pink-400">Conduct</span>{" "}
-            <span className="text-thulian_pink-400">market research</span> to
-            identify key{" "}
-            <span className="text-thulian_pink-400">accessibility issues</span>{" "}
-            in web applications.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • <span className="text-thulian_pink-400">Collaborate</span> with{" "}
-            <span className="text-thulian_pink-400">
-              cross-functional teams
-            </span>{" "}
-            to define product requirements and ensure alignment with{" "}
-            <span className="text-thulian_pink-400">WCAG 2.2 standards</span>.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • <span className="text-thulian_pink-400">Analyze</span>{" "}
-            <span className="text-thulian_pink-400">user feedback</span> and
-            data to enhance the product's ability to detect and report
-            accessibility issues.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • <span className="text-thulian_pink-400">Develop</span> product
-            documentation and{" "}
-            <span className="text-thulian_pink-400">user guides</span> for the
-            accessibility issue detector.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • <span className="text-thulian_pink-400">Participate</span> in{" "}
-            <span className="text-thulian_pink-400">stakeholder meetings</span>{" "}
-            to present findings and gather input.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • <span className="text-thulian_pink-400">Create</span> requirements
-            and functionalities, leveraging{" "}
-            <span className="text-thulian_pink-400">development skills</span>{" "}
-            and{" "}
-            <span className="text-thulian_pink-400">
-              accessibility experience
-            </span>
-            .
-          </p>
-        </>
-      }
-    ></ExperienceItem>
-    
-    <ExperienceItem
-      company={""}
-      date={""}
-      position={"Accesibility Tester"}
-      tasks={
-        <>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Evaluation of compliance with{" "}
-            <span className="text-thulian_pink-400">
-              accessibility standards
-            </span>
-            .{" "}
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • <span className="text-thulian_pink-400">Testing</span> with{" "}
-            <span className="text-thulian_pink-400">
-              assistive technologies
-            </span>
-            .
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • <span className="text-thulian_pink-400">Analysis</span> of
-            navigation and interaction.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Facilitating{" "}
-            <span className="text-thulian_pink-400">
-              usability testing
-            </span>{" "}
-            with individuals having{" "}
-            <span className="text-thulian_pink-400">disabilities</span>.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Creating{" "}
-            <span className="text-thulian_pink-400">detailed reports</span>.
-          </p>
-        </>
-      }
-    />
-    <ExperienceItem
-      company={""}
-      date={""}
-      position={"Functional Tester"}
-      tasks={
-        <>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Executes <span className="text-thulian_pink-400">
-              test cases
-            </span>{" "}
-            under varying circumstances.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Documents and evaluates{" "}
-            <span className="text-thulian_pink-400">test results</span>.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Detects, logs, and reports program{" "}
-            <span className="text-thulian_pink-400">bugs</span> and{" "}
-            <span className="text-thulian_pink-400">glitches</span>.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Tracks defects and helps{" "}
-            <span className="text-thulian_pink-400">troubleshoot errors</span>.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            • Reviews{" "}
-            <span className="text-thulian_pink-400">
-              test procedures
-            </span> and{" "}
-            <span className="text-thulian_pink-400">develops test scripts</span>
-            .
-          </p>
-        </>
-      }
-    />
-        <ExperienceItem
-      company={"ANGELS PETS"}
-      date={"January 2023 - September 2023"}
-      position={"Community Manager"}
-      tasks={
-        <>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Successfully spearhead campaigns on social media platforms
-            including
-            <span className="text-thulian_pink-400"> Facebook</span>,{" "}
-            <span className="text-thulian_pink-400">Twitter</span>, and{" "}
-            <span className="text-thulian_pink-400">Instagram</span>
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Manage social media planning for execution of{" "}
-            <span className="text-thulian_pink-400">marketing strategies </span>
-            and community management
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Implement marketing and promotion tactics that led to{" "}
-            <span className="text-thulian_pink-400"> 34% growth </span> in total
-            social media shares and{" "}
-            <span className="text-thulian_pink-400"> 27% increase </span> in
-            website traffic from social media posts
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            • Monitor online presence of{" "}
-            <span className="text-thulian_pink-400">company's brand</span> and
-            engage with users,
-            <span> strengthening customer relationships </span>
-          </p>
-        </>
-      }
-    />
-        <ExperienceItem
-      company={"JMRL"}
-      date={"September 2023"}
-      position={"Marketing"}
-      tasks={
-        <>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            . Analysis of{" "}
-            <span className="text-thulian_pink-400">market needs</span>, trends
-            and creative idea development.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            . <span className="text-thulian_pink-400">Design</span> and{" "}
-            <span className="text-thulian_pink-400">management</span> of plans,
-            offline/online marketing activities
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            .{" "}
-            <span className="text-thulian_pink-400">
-              Communication management
-            </span>{" "}
-            and <span className="text-thulian_pink-400">marketing plan</span> in
-            traditional media and digital platforms.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            . Design and implementation of online{" "}
-            <span className="text-thulian_pink-400">marketing plans</span> for
-            clients from various sectors.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            . Analysis of the competition,{" "}
-            <span className="text-thulian_pink-400"> market study </span> and
-            trends in digital platforms.
-          </p>
-        </>
-      }
-    />
-        <ExperienceItem
-      company={"Recharge Phones"}
-      date={"April 2023 - May 2023"}
-      position={"QA Tester"}
-      tasks={
-        <>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            . Developed and executed test{" "}
-            <span className="text-thulian_pink-400">plans</span> based on
-            business
-            <span className="text-thulian_pink-400"> requirements </span>.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            . Wrote integration, regression, and automated{" "}
-            <span className="text-thulian_pink-400"> test cases.</span>
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            . Maintained and executed regression{" "}
-            <span className="text-thulian_pink-400"> test suites </span> . Ran
-            Beta testing and defect management.
-          </p>
-          <p className="text-sm ml-3 mb-1 lg:text-base">
-            {" "}
-            . Provided recommendations on areas for{" "}
-            <span className="text-thulian_pink-400">
-              {" "}
-              test case automation{" "}
-            </span>
-          </p>
-        </>
-      }
-    />
-      </div>
-    </section>
-  </main>
-);
+        </div>
+      </section>
+    </main>
+  );
+};
 
 export default Experience;
