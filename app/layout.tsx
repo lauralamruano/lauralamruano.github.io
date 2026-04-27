@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Laura Lam | Product Manager Portfolio",
-  description: "Senior Product Manager specializing in accessibility-focused tech solutions and user-centric product development.",
+  title: "Laura Lam | Project Manager Portfolio",
+  description: "Project Manager with a background in Computer Engineering, specializing in digital accessibility (WCAG), leading tech products focused on user experience and inclusive design.",
 };
 
 export default function RootLayout({

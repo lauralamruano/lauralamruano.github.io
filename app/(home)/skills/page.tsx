@@ -24,43 +24,33 @@ const SkillsPage = () => {
       title: t.skills.categories.programmingLanguages,
       icon: "code",
       languages: [
+        { name: "JavaScript", type: "language" },
         { name: "Python", type: "language" },
         { name: "Dart", type: "language" },
         { name: "HTML", type: "language" },
         { name: "CSS", type: "language" },
-        { name: "JavaScript", type: "language" },
-        { name: "TypeScript", type: "language" },
-        { name: "MySQL", type: "language" },
-        { name: "PostgreSQL", type: "language" }
+        { name: "TypeScript", type: "language" }
       ]
     },
     {
-      title: t.skills.categories.toolsAnalytics, 
+      title: t.skills.categories.toolsAnalytics,
       icon: "build",
       tools: [
-        { name: "Jira", type: "tool" },
+        { name: "Figma", type: "tool" },
         { name: "GitHub", type: "tool" },
-        { name: "Mixpanel", type: "tool" },
-        { name: "Amplitude", type: "tool" },
-        { name: "SQL", type: "tool" },
-        { name: "Figma", type: "tool" }
+        { name: "Jira", type: "tool" }
       ]
     },
     {
       title: t.skills.categories.frameworksLibraries,
       icon: "layers",
       frameworks: [
-        { name: "Git", type: "tool" },
         { name: "React", type: "framework" },
-        { name: "Django", type: "framework" },
-        { name: "Material UI", type: "framework" },
-        { name: "Sass", type: "framework" },
-        { name: "DaisyUI", type: "framework" },
-        { name: "Flask", type: "framework" },
-        { name: "Tailwind", type: "framework" },
         { name: "Flutter", type: "framework" },
-        { name: "Postman", type: "tool" },
-        { name: "AWS", type: "tool" }
+        { name: "Redux", type: "framework" },
+        { name: "Axios", type: "framework" },
+        { name: "Git", type: "tool" },
+        { name: "Tailwind", type: "framework" }
       ]
     },
     {
@@ -85,16 +75,14 @@ const SkillsPage = () => {
       icon: "language",
       languages: [
         { code: "🇪🇸", name: "Spanish", level: "Native", levelType: "primary" },
-        { code: "🇺🇸", name: "English", level: "Intermediate", levelType: "secondary" },
-        { code: "🇮🇹", name: "Italian", level: "Basic", levelType: "secondary" }
+        { code: "🇺🇸", name: "English", level: "Intermediate", levelType: "secondary" }
       ]
     },
     {
       title: t.skills.categories.education,
       icon: "school",
       education: [
-        { period: "2022 - 2025", degree: "Computer Engineer", institution: "University of Cienfuegos - Carlos Rafael Rodriguez", isActive: true },
-        { period: "2023", degree: "Product Strategy Cert.", institution: "Reforge", isActive: false }
+        { period: "Sep 2021 – Sep 2024", degree: "Computer Engineering", institution: "Carlos Rafael Rodríguez University, Cienfuegos", isActive: true }
       ]
     }
   ];
@@ -357,38 +345,23 @@ const SkillsPage = () => {
                       style={{ backgroundColor: 'rgb(var(--surface))' }}
                     >
                       <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--accent))', filter: 'grayscale(1)' }}>
-                        {framework.name === "Git" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>source</span>
-                        )}
                         {framework.name === "React" && (
                           <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>hexagon</span>
-                        )}
-                        {framework.name === "Django" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>web</span>
-                        )}
-                        {framework.name === "Material UI" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>palette</span>
-                        )}
-                        {framework.name === "Sass" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>brush</span>
-                        )}
-                        {framework.name === "DaisyUI" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>spa</span>
-                        )}
-                        {framework.name === "Flask" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>science</span>
-                        )}
-                        {framework.name === "Tailwind" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>waves</span>
                         )}
                         {framework.name === "Flutter" && (
                           <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>flutter</span>
                         )}
-                        {framework.name === "Postman" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>send</span>
+                        {framework.name === "Redux" && (
+                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>sync_alt</span>
                         )}
-                        {framework.name === "AWS" && (
-                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>cloud</span>
+                        {framework.name === "Axios" && (
+                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>api</span>
+                        )}
+                        {framework.name === "Git" && (
+                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>source</span>
+                        )}
+                        {framework.name === "Tailwind" && (
+                          <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>waves</span>
                         )}
                       </div>
                       <span className="font-medium text-center text-sm" style={{ color: 'rgb(var(--text))' }}>

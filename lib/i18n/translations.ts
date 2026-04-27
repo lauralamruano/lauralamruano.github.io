@@ -148,14 +148,14 @@ export const translations: Record<Language, Translations> = {
       skills: 'Skills',
     },
     home: {
-      title: 'Laura Lam | Product Manager',
-      subtitle: 'Building scalable tech solutions that bridge the gap between complex engineering and user needs.',
+      title: 'Laura Lam | Project Manager',
+      subtitle: 'Project Manager specializing in digital accessibility (WCAG), leading technology products that prioritize user experience, quality, and inclusive design.',
       viewExperience: 'View Experience',
       getInTouch: 'Get in Touch',
       aboutMe: {
         title: 'About Me',
-        paragraph1: 'Highly trained and motivated Computer Engineer with extensive experience in software development, programming, and frontend design. I excel at translating complex technical requirements into user-centric product solutions.',
-        paragraph2: 'My approach combines technical expertise with strategic product thinking, ensuring that solutions not only work flawlessly but also deliver exceptional user experiences. I\'m passionate about building products that solve real problems while pushing the boundaries of what\'s technically possible.',
+        paragraph1: 'Project Manager with a background in Computer Engineering and a strong specialization in digital accessibility (WCAG). Focused on leading technology products that prioritize user experience, quality, and inclusive design.',
+        paragraph2: 'Currently leading a product team building accessibility-driven web solutions, coordinating efforts across development, QA, and stakeholders to deliver high-quality outcomes aligned with user needs.',
         yearsExperience: 'Years Experience',
         projectsDelivered: 'Projects Delivered',
         clientSatisfaction: 'Client Satisfaction',
@@ -164,19 +164,19 @@ export const translations: Record<Language, Translations> = {
         title: 'Core Competencies',
         technicalExcellence: {
           title: 'Technical Excellence',
-          description: 'Full-stack development expertise with modern frameworks and best practices',
+          description: 'Frontend development with React, Flutter, Redux and Axios, focused on accessibility and inclusive design',
         },
         productStrategy: {
           title: 'Product Strategy',
-          description: 'Data-driven decision making and user-centered design thinking',
+          description: 'Roadmap definition, feature prioritization, and stakeholder collaboration aligned with user needs',
         },
         teamLeadership: {
           title: 'Team Leadership',
-          description: 'Cross-functional collaboration and agile project management',
+          description: 'Leading cross-functional teams across development, QA, and product with agile methodologies',
         },
         growthFocus: {
-          title: 'Growth Focus',
-          description: 'Scaling products and optimizing user acquisition funnels',
+          title: 'Accessibility Focus',
+          description: 'WCAG-compliant audits, assistive technology testing, and accessibility-driven product development',
         },
       },
       contact: {
@@ -189,47 +189,39 @@ export const translations: Record<Language, Translations> = {
       title: 'Experience',
       positions: {
         a11yBot: {
-          company: 'A11 y Solutions September 2023 - Present',
-          date: 'A11y Bot',
-          position: 'Frontend Developer',
+          company: 'A11y Solutions',
+          date: 'April 2023 – Present',
+          position: 'Project Manager / Product Lead',
           tasks: [
-            'Developed an accessibility-focused bot interface using React, enhancing user experience for individuals with disabilities.',
-            'Implemented state management with Redux to streamline data flow and improve application performance.',
-            'Integrated Axios for seamless API interactions, ensuring efficient data retrieval and management.',
-            'Designed and enforced authentication protocols with Auth0, ensuring secure user access and data protection.',
-            'Collaborated with UX/UI designers to create intuitive layouts and features, enhancing usability and accessibility standards.',
+            'Led a cross-functional team of 10 people (development, QA, product) focused on web accessibility solutions aligned with WCAG standards.',
+            'Defined product roadmap, priorities, and feature scope in collaboration with stakeholders.',
+            'Coordinated delivery across all team functions to ensure efficient and consistent output.',
+            'Analyzed product behavior and identified opportunities for improvement.',
+            'Contributed to the design and evolution of accessibility issue detection tools.',
           ],
         },
         accessibilityDetector: {
-          date: 'Accesibility Detector',
+          date: 'A11y Solutions',
           position: 'Product Analyst',
           tasks: [
-            'Conduct market research to identify key accessibility issues in web applications.',
-            'Collaborate with cross-functional teams to define product requirements and ensure alignment with WCAG 2.2 standards.',
-            'Analyze user feedback and data to enhance the product\'s ability to detect and report accessibility issues.',
-            'Develop product documentation and user guides for the accessibility issue detector.',
-            'Participate in stakeholder meetings to present findings and gather input.',
-            'Create requirements and functionalities, leveraging development skills and accessibility experience.',
+            'Played a key role in developing an accessibility issue detector.',
+            'Worked closely with cross-functional teams to define product requirements, prioritize features, and ensure the product met the evolving needs of users.',
           ],
         },
         accessibilityTester: {
-          position: 'Accesibility Tester',
+          position: 'QA & Accessibility Tester',
           tasks: [
-            'Evaluation of compliance with accessibility standards.',
-            'Testing with assistive technologies.',
-            'Analysis of navigation and interaction.',
-            'Facilitating usability testing with individuals having disabilities.',
-            'Creating detailed reports.',
+            'Conducted 15+ accessibility audits for international enterprise clients, including Starbucks, Mastercard, NBA, BBVA, Barceló Hotel Group, and Walmart — covering web, mobile, and native platforms.',
+            'Tested with assistive technologies, analyzed navigation and interaction, and facilitated usability testing with individuals with disabilities.',
+            'Executed functional test cases, detected and logged bugs, tracked defects, and developed test scripts and detailed reports.',
           ],
         },
         functionalTester: {
-          position: 'Functional Tester',
+          position: 'Frontend Developer',
           tasks: [
-            'Executes test cases under varying circumstances.',
-            'Documents and evaluates test results.',
-            'Detects, logs, and reports program bugs and glitches.',
-            'Tracks defects and helps troubleshoot errors.',
-            'Reviews test procedures and develops test scripts.',
+            'Developed an accessibility-focused bot interface using React, improving user experience for individuals with disabilities.',
+            'Implemented state management with Redux to streamline data flow and improve application performance.',
+            'Integrated Axios for seamless API interactions, ensuring efficient data retrieval and management.',
           ],
         },
         angelsPets: {
@@ -328,14 +320,14 @@ export const translations: Record<Language, Translations> = {
       skills: 'Habilidades',
     },
     home: {
-      title: 'Laura Lam | Product Manager',
-      subtitle: 'Construyendo soluciones tecnológicas escalables que conectan la ingeniería compleja con las necesidades del usuario.',
+      title: 'Laura Lam | Project Manager',
+      subtitle: 'Project Manager especializada en accesibilidad digital (WCAG), liderando productos tecnológicos que priorizan la experiencia del usuario, la calidad y el diseño inclusivo.',
       viewExperience: 'Ver Experiencia',
       getInTouch: 'Contactar',
       aboutMe: {
         title: 'Acerca de Mí',
-        paragraph1: 'Ingeniera Informática altamente capacitada y motivada con amplia experiencia en desarrollo de software, programación y diseño frontend. Destaco en la traducción de requisitos técnicos complejos en soluciones de productos centradas en el usuario.',
-        paragraph2: 'Mi enfoque combina experiencia técnica con pensamiento estratégico de productos, asegurando que las soluciones no solo funcionen sin problemas sino que también brinden experiencias de usuario excepcionales. Soy apasionada de construir productos que resuelven problemas reales mientras empujan los límites de lo técnicamente posible.',
+        paragraph1: 'Project Manager con formación en Ingeniería Informática y una fuerte especialización en accesibilidad digital (WCAG). Enfocada en liderar productos tecnológicos que priorizan la experiencia del usuario, la calidad y el diseño inclusivo.',
+        paragraph2: 'Actualmente liderando un equipo de producto construyendo soluciones web orientadas a la accesibilidad, coordinando esfuerzos entre desarrollo, QA y stakeholders para entregar resultados de alta calidad alineados con las necesidades del usuario.',
         yearsExperience: 'Años de Experiencia',
         projectsDelivered: 'Proyectos Entregados',
         clientSatisfaction: 'Satisfacción del Cliente',
@@ -344,19 +336,19 @@ export const translations: Record<Language, Translations> = {
         title: 'Competencias Clave',
         technicalExcellence: {
           title: 'Excelencia Técnica',
-          description: 'Expertos en desarrollo full-stack con frameworks modernos y mejores prácticas',
+          description: 'Desarrollo frontend con React, Flutter, Redux y Axios, enfocado en accesibilidad y diseño inclusivo',
         },
         productStrategy: {
           title: 'Estrategia de Producto',
-          description: 'Toma de decisiones basada en datos y pensamiento de diseño centrado en el usuario',
+          description: 'Definición de roadmap, priorización de funcionalidades y colaboración con stakeholders alineada a las necesidades del usuario',
         },
         teamLeadership: {
           title: 'Liderazgo de Equipo',
-          description: 'Colaboración multifuncional y gestión de proyectos ágiles',
+          description: 'Liderazgo de equipos multifuncionales entre desarrollo, QA y producto con metodologías ágiles',
         },
         growthFocus: {
-          title: 'Enfoque en Crecimiento',
-          description: 'Escalando productos y optimizando embudos de adquisición de usuarios',
+          title: 'Enfoque en Accesibilidad',
+          description: 'Auditorías WCAG, pruebas con tecnologías asistivas y desarrollo de producto orientado a la accesibilidad',
         },
       },
       contact: {
@@ -369,47 +361,39 @@ export const translations: Record<Language, Translations> = {
       title: 'Experiencia',
       positions: {
         a11yBot: {
-          company: 'A11 y Solutions Septiembre 2023 - Presente',
-          date: 'A11y Bot',
+          company: 'A11y Solutions',
+          date: 'Abril 2023 – Presente',
+          position: 'Project Manager / Product Lead',
+          tasks: [
+            'Lideré un equipo multifuncional de 10 personas (desarrollo, QA, producto) enfocado en soluciones de accesibilidad web alineadas con los estándares WCAG.',
+            'Definí el roadmap del producto, prioridades y alcance de funcionalidades en colaboración con los stakeholders.',
+            'Coordiné la entrega entre todas las funciones del equipo para garantizar resultados eficientes y consistentes.',
+            'Analicé el comportamiento del producto e identifiqué oportunidades de mejora.',
+            'Contribuí al diseño y evolución de herramientas de detección de problemas de accesibilidad.',
+          ],
+        },
+        accessibilityDetector: {
+          date: 'A11y Solutions',
+          position: 'Analista de Producto',
+          tasks: [
+            'Tuve un rol clave en el desarrollo de un detector de problemas de accesibilidad.',
+            'Trabajé estrechamente con equipos multifuncionales para definir requisitos del producto, priorizar funcionalidades y garantizar que el producto satisficiera las necesidades cambiantes de los usuarios.',
+          ],
+        },
+        accessibilityTester: {
+          position: 'QA & Tester de Accesibilidad',
+          tasks: [
+            'Realicé más de 15 auditorías de accesibilidad para clientes empresariales internacionales, incluyendo Starbucks, Mastercard, NBA, BBVA, Barceló Hotel Group y Walmart, cubriendo plataformas web, móvil y nativas.',
+            'Realicé pruebas con tecnologías asistivas, analicé navegación e interacción, y facilité pruebas de usabilidad con personas con discapacidades.',
+            'Ejecuté casos de prueba funcionales, detecté y registré bugs, rastreé defectos y desarrollé scripts de prueba e informes detallados.',
+          ],
+        },
+        functionalTester: {
           position: 'Desarrolladora Frontend',
           tasks: [
             'Desarrollé una interfaz de bot enfocada en accesibilidad usando React, mejorando la experiencia del usuario para personas con discapacidades.',
             'Implementé gestión de estado con Redux para optimizar el flujo de datos y mejorar el rendimiento de la aplicación.',
             'Integré Axios para interacciones API fluidas, asegurando recuperación y gestión eficiente de datos.',
-            'Diseñé y enforcing protocolos de autenticación con Auth0, asegurando acceso seguro de usuarios y protección de datos.',
-            'Colaboré con diseñadores UX/UI para crear layouts intuitivos y características, mejorando usabilidad y estándares de accesibilidad.',
-          ],
-        },
-        accessibilityDetector: {
-          date: 'Detector de Accesibilidad',
-          position: 'Analista de Producto',
-          tasks: [
-            'Realizo investigación de mercado para identificar problemas clave de accesibilidad en aplicaciones web.',
-            'Colaboro con equipos multifuncionales para definir requisitos de producto y asegurar alineación con estándares WCAG 2.2.',
-            'Analizo retroalimentación de usuarios y datos para mejorar la capacidad del producto para detectar y reportar problemas de accesibilidad.',
-            'Desarrollo documentación de producto y guías de usuario para el detector de problemas de accesibilidad.',
-            'Participo en reuniones con stakeholders para presentar hallazgos y recopilar input.',
-            'Creo requisitos y funcionalidades, aprovechando habilidades de desarrollo y experiencia en accesibilidad.',
-          ],
-        },
-        accessibilityTester: {
-          position: 'Tester de Accesibilidad',
-          tasks: [
-            'Evaluación de cumplimiento con estándares de accesibilidad.',
-            'Pruebas con tecnologías asistivas.',
-            'Análisis de navegación e interacción.',
-            'Facilitando pruebas de usabilidad con personas con discapacidades.',
-            'Creando reportes detallados.',
-          ],
-        },
-        functionalTester: {
-          position: 'Tester Funcional',
-          tasks: [
-            'Ejecuta casos de prueba bajo circunstancias variables.',
-            'Documenta y evalúa resultados de prueba.',
-            'Detecta, registra y reporta bugs y glitches del programa.',
-            'Rastrea defectos y ayuda a solucionar errores.',
-            'Revisa procedimientos de prueba y desarrolla scripts de prueba.',
           ],
         },
         angelsPets: {
@@ -508,14 +492,14 @@ export const translations: Record<Language, Translations> = {
       skills: 'Competenze',
     },
     home: {
-      title: 'Laura Lam | Product Manager',
-      subtitle: 'Costruendo soluzioni tecnologiche scalabili che collegano l\'ingegneria complessa con le esigenze degli utenti.',
+      title: 'Laura Lam | Project Manager',
+      subtitle: 'Project Manager specializzata in accessibilità digitale (WCAG), guida prodotti tecnologici che danno priorità all\'esperienza utente, alla qualità e al design inclusivo.',
       viewExperience: 'Vedi Esperienza',
       getInTouch: 'Contattami',
       aboutMe: {
         title: 'Chi Sono',
-        paragraph1: 'Ingegnere Informatico altamente qualificato e motivato con vasta esperienza nello sviluppo software, programmazione e design frontend. Eccello nel tradurre requisiti tecnici complessi in soluzioni di prodotto centrate sull\'utente.',
-        paragraph2: 'Il mio approccio combina competenza tecnica con pensiero strategico di prodotto, assicurando che le soluzioni non solo funzionino perfettamente ma forniscano anche eccezionali esperienze utente. Sono appassionata nel costruire prodotti che risolvono problemi reali spingendo i limiti di ciò che è tecnicamente possibile.',
+        paragraph1: 'Project Manager con background in Ingegneria Informatica e forte specializzazione nell\'accessibilità digitale (WCAG). Focalizzata nel guidare prodotti tecnologici che danno priorità all\'esperienza utente, alla qualità e al design inclusivo.',
+        paragraph2: 'Attualmente guida un team di prodotto per costruire soluzioni web orientate all\'accessibilità, coordinando sforzi tra sviluppo, QA e stakeholder per consegnare risultati di alta qualità allineati con le esigenze degli utenti.',
         yearsExperience: 'Anni di Esperienza',
         projectsDelivered: 'Progetti Conseguiti',
         clientSatisfaction: 'Soddisfazione del Cliente',
@@ -524,19 +508,19 @@ export const translations: Record<Language, Translations> = {
         title: 'Competenze Chiave',
         technicalExcellence: {
           title: 'Eccellenza Tecnica',
-          description: 'Competenza sviluppo full-stack con framework moderni e best practices',
+          description: 'Sviluppo frontend con React, Flutter, Redux e Axios, focalizzato sull\'accessibilità e design inclusivo',
         },
         productStrategy: {
           title: 'Strategia di Prodotto',
-          description: 'Decision making basato sui dati e design thinking centrato sull\'utente',
+          description: 'Definizione roadmap, prioritizzazione funzionalità e collaborazione con stakeholder allineata alle esigenze utente',
         },
         teamLeadership: {
           title: 'Leadership di Team',
-          description: 'Collaborazione cross-funzionale e gestione progetti agile',
+          description: 'Guida di team cross-funzionali tra sviluppo, QA e prodotto con metodologie agili',
         },
         growthFocus: {
-          title: 'Focus sulla Crescita',
-          description: 'Scalare prodotti e ottimizzare funnel di acquisizione utenti',
+          title: 'Focus sull\'Accessibilità',
+          description: 'Audit WCAG, testing con tecnologie assistive e sviluppo prodotto orientato all\'accessibilità',
         },
       },
       contact: {
@@ -549,47 +533,39 @@ export const translations: Record<Language, Translations> = {
       title: 'Esperienza',
       positions: {
         a11yBot: {
-          company: 'A11 y Solutions Settembre 2023 - Presente',
-          date: 'A11y Bot',
+          company: 'A11y Solutions',
+          date: 'Aprile 2023 – Presente',
+          position: 'Project Manager / Product Lead',
+          tasks: [
+            'Ho guidato un team cross-funzionale di 10 persone (sviluppo, QA, prodotto) focalizzato su soluzioni di accessibilità web allineate con gli standard WCAG.',
+            'Ho definito roadmap del prodotto, priorità e portata delle funzionalità in collaborazione con gli stakeholder.',
+            'Ho coordinato la consegna tra tutte le funzioni del team per garantire output efficiente e coerente.',
+            'Ho analizzato il comportamento del prodotto e identificato opportunità di miglioramento.',
+            'Ho contribuito al design e all\'evoluzione di strumenti per il rilevamento di problemi di accessibilità.',
+          ],
+        },
+        accessibilityDetector: {
+          date: 'A11y Solutions',
+          position: 'Analista di Prodotto',
+          tasks: [
+            'Ho avuto un ruolo chiave nello sviluppo di un rilevatore di problemi di accessibilità.',
+            'Ho lavorato a stretto contatto con team cross-funzionali per definire requisiti di prodotto, prioritizzare funzionalità e garantire che il prodotto soddisfacesse le esigenze in evoluzione degli utenti.',
+          ],
+        },
+        accessibilityTester: {
+          position: 'QA & Tester di Accessibilità',
+          tasks: [
+            'Ho condotto oltre 15 audit di accessibilità per clienti enterprise internazionali, tra cui Starbucks, Mastercard, NBA, BBVA, Barceló Hotel Group e Walmart, coprendo piattaforme web, mobile e native.',
+            'Ho testato con tecnologie assistive, analizzato navigazione e interazione, e facilitato test di usabilità con persone con disabilità.',
+            'Ho eseguito casi di test funzionali, rilevato e registrato bug, tracciato difetti e sviluppato script di test e report dettagliati.',
+          ],
+        },
+        functionalTester: {
           position: 'Sviluppatrice Frontend',
           tasks: [
             'Ho sviluppato un\'interfaccia bot focalizzata sull\'accessibilità usando React, migliorando l\'esperienza utente per persone con disabilità.',
             'Ho implementato gestione stato con Redux per ottimizzare il flusso dati e migliorare le performance dell\'applicazione.',
             'Ho integrato Axios per interazioni API fluide, assicurando recupero e gestione efficiente dei dati.',
-            'Ho progettato e applicato protocolli di autenticazione con Auth0, assicurando accesso utente sicuro e protezione dati.',
-            'Ho collaborato con designer UX/UI per creare layout intuitivi e funzionalità, migliorando usabilità e standard di accessibilità.',
-          ],
-        },
-        accessibilityDetector: {
-          date: 'Rilevatore di Accessibilità',
-          position: 'Analista di Prodotto',
-          tasks: [
-            'Conduco ricerche di mercato per identificare problemi chiave di accessibilità nelle applicazioni web.',
-            'Collaboro con team cross-funzionali per definire requisiti di prodotto e assicurare allineamento con standard WCAG 2.2.',
-            'Analizzo feedback utenti e dati per migliorare la capacità del prodotto di rilevare e reportare problemi di accessibilità.',
-            'Sviluppo documentazione di prodotto e guide utente per il rilevatore di problemi di accessibilità.',
-            'Partecipo a meeting con stakeholder per presentare risultati e raccogliere input.',
-            'Creo requisiti e funzionalità, sfruttando competenze di sviluppo ed esperienza in accessibilità.',
-          ],
-        },
-        accessibilityTester: {
-          position: 'Tester di Accessibilità',
-          tasks: [
-            'Valutazione della conformità con standard di accessibilità.',
-            'Testing con tecnologie assistive.',
-            'Analisi di navigazione e interazione.',
-            'Facilitando testing di usabilità con persone con disabilità.',
-            'Creando report dettagliati.',
-          ],
-        },
-        functionalTester: {
-          position: 'Tester Funzionale',
-          tasks: [
-            'Esegue casi di test in circostanze variabili.',
-            'Documenta e valuta risultati di test.',
-            'Rileva, registra e reporta bug e glitch del programma.',
-            'Traccia difetti e aiuta a risolvere errori.',
-            'Revisiona procedure di test e sviluppa script di test.',
           ],
         },
         angelsPets: {

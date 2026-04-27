@@ -22,7 +22,7 @@ const Experience = () => {
               company={t.experience.positions.a11yBot.company}
               date={t.experience.positions.a11yBot.date}
               position={t.experience.positions.a11yBot.position}
-              skills={["Product Strategy", "WCAG Compliance", "AI/ML", "User Research"]}
+              skills={["Product Roadmap", "WCAG", "Agile/Scrum", "Stakeholder Management"]}
               tasks={
                 <>
                   {t.experience.positions.a11yBot.tasks.map((task, index) => (
@@ -34,12 +34,12 @@ const Experience = () => {
                 </>
               }
             />
-            
+
             <ExperienceItem
-              company="Accessibility Detector"
-              date={t.experience.positions.accessibilityDetector.date}
+              company={t.experience.positions.accessibilityDetector.date}
+              date={t.experience.positions.a11yBot.date}
               position={t.experience.positions.accessibilityDetector.position}
-              skills={["Data Analysis", "Mixpanel", "Agile/Scrum"]}
+              skills={["Product Requirements", "Feature Prioritization", "WCAG 2.2"]}
               tasks={
                 <>
                   {t.experience.positions.accessibilityDetector.tasks.map((task, index) => (
@@ -51,12 +51,29 @@ const Experience = () => {
                 </>
               }
             />
-            
+
             <ExperienceItem
-              company="Accessibility Testing"
-              date="2020 — 2021"
+              company={t.experience.positions.accessibilityDetector.date}
+              date={t.experience.positions.a11yBot.date}
+              position={t.experience.positions.functionalTester.position}
+              skills={["React", "Redux", "Axios"]}
+              tasks={
+                <>
+                  {t.experience.positions.functionalTester.tasks.map((task, index) => (
+                    <div key={index} className="flex gap-3">
+                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
+                      <span>{task}</span>
+                    </div>
+                  ))}
+                </>
+              }
+            />
+
+            <ExperienceItem
+              company={t.experience.positions.accessibilityDetector.date}
+              date={t.experience.positions.a11yBot.date}
               position={t.experience.positions.accessibilityTester.position}
-              skills={["WCAG Testing", "Screen Readers", "Accessibility Audits"]}
+              skills={["WCAG Audits", "Assistive Technologies", "Usability Testing"]}
               tasks={
                 <>
                   {t.experience.positions.accessibilityTester.tasks.map((task, index) => (
@@ -69,80 +86,16 @@ const Experience = () => {
               }
             />
             
-            <ExperienceItem
-              company="Software Testing"
-              date="2019 — 2020"
-              position={t.experience.positions.functionalTester.position}
-              skills={["Test Planning", "Bug Tracking", "Test Automation"]}
-              tasks={
-                <>
-                  {t.experience.positions.functionalTester.tasks.map((task, index) => (
-                    <div key={index} className="flex gap-3">
-                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
-                      <span>{task}</span>
-                    </div>
-                  ))}
-                </>
-              }
-            />
-            
-            <ExperienceItem
-              company={t.experience.positions.angelsPets.company}
-              date={t.experience.positions.angelsPets.date}
-              position={t.experience.positions.angelsPets.position}
-              skills={["Social Media", "Content Strategy", "Community Management"]}
-              tasks={
-                <>
-                  {t.experience.positions.angelsPets.tasks.map((task, index) => (
-                    <div key={index} className="flex gap-3">
-                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
-                      <span>{task}</span>
-                    </div>
-                  ))}
-                </>
-              }
-            />
-            
-            <ExperienceItem
-              company={t.experience.positions.jmrl.company}
-              date={t.experience.positions.jmrl.date}
-              position={t.experience.positions.jmrl.position}
-              skills={["Market Research", "Digital Marketing", "Content Creation"]}
-              tasks={
-                <>
-                  {t.experience.positions.jmrl.tasks.map((task, index) => (
-                    <div key={index} className="flex gap-3">
-                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
-                      <span>{task}</span>
-                    </div>
-                  ))}
-                </>
-              }
-            />
-            
-            <ExperienceItem
-              company={t.experience.positions.rechargePhones.company}
-              date={t.experience.positions.rechargePhones.date}
-              position={t.experience.positions.rechargePhones.position}
-              skills={["QA Testing", "Test Cases", "Beta Testing"]}
-              tasks={
-                <>
-                  {t.experience.positions.rechargePhones.tasks.map((task, index) => (
-                    <div key={index} className="flex gap-3">
-                      <span className="text-primary mt-1.5 material-symbols-outlined text-sm">check_circle</span>
-                      <span>{task}</span>
-                    </div>
-                  ))}
-                </>
-              }
-            />
-            
             {/* Download Resume Button */}
             <div className="flex justify-center mt-12">
-              <button className="px-6 py-3 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800 rounded-full font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:border-primary dark:hover:border-primary transition-all flex items-center gap-2 shadow-sm">
+              <a
+                href="/Laura_Lam_Resume.pdf"
+                download="Laura_Lam_Resume.pdf"
+                className="px-6 py-3 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800 rounded-full font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:border-primary dark:hover:border-primary transition-all flex items-center gap-2 shadow-sm"
+              >
                 <span>Download Full Resume</span>
                 <span className="material-symbols-outlined text-lg">download</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

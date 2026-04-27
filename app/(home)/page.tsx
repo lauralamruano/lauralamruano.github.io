@@ -32,7 +32,7 @@ const HomePage = () => {
             
             <div className="text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6" style={{ color: 'rgb(var(--text))' }}>
-                Laura Lam <span className="text-primary">|</span> Product Manager
+                Laura Lam <span className="text-primary">|</span> Project Manager
               </h1>
               <p className="text-2xl md:text-3xl font-light mb-8 max-w-2xl" style={{ color: 'rgb(var(--muted))' }}>
                 {t.home.subtitle}
@@ -68,14 +68,10 @@ const HomePage = () => {
             <p>
               {t.home.aboutMe.paragraph2}
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
               <div className="card text-center">
-                <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                <div className="text-3xl font-bold text-primary mb-2">3+</div>
                 <div className="text-sm text-muted">{t.home.aboutMe.yearsExperience}</div>
-              </div>
-              <div className="card text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted">{t.home.aboutMe.projectsDelivered}</div>
               </div>
               <div className="card text-center">
                 <div className="text-3xl font-bold text-primary mb-2">100%</div>
@@ -153,10 +149,10 @@ const HomePage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href="mailto:lamruanolaura@gmail.com"
+              href="mailto:lauraestherlamruano@gmail.com"
               className="text-2xl md:text-3xl font-bold text-primary hover:text-primary/80 hover:underline underline-offset-8 transition-all break-all"
             >
-              lamruanolaura@gmail.com
+              lauraestherlamruano@gmail.com
             </a>
           </div>
           
@@ -173,7 +169,7 @@ const HomePage = () => {
               </svg>
             </a>
             <a 
-              href="https://www.linkedin.com/in/lauralamruano" 
+              href="https://www.linkedin.com/in/laura-lam-30a445406/"
               className="text-slate-400 hover:text-primary transition-colors p-3 rounded-full hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               aria-label={t.accessibility.linkedinProfile}
               target="_blank"
@@ -184,7 +180,7 @@ const HomePage = () => {
               </svg>
             </a>
             <a 
-              href="https://wa.me/+5354916323" 
+              href="https://wa.me/+59895042812"
               className="text-slate-400 hover:text-primary transition-colors p-3 rounded-full hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               aria-label={t.accessibility.whatsapp}
               target="_blank"

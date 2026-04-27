@@ -65,7 +65,7 @@ const AppBar = () => {
             </svg>
           </a>
           <a 
-            href="https://www.linkedin.com/in/lauralamruano" 
+            href="https://www.linkedin.com/in/laura-lam-30a445406/"
             className="icon-btn"
             aria-label={t.accessibility.linkedinProfile}
             target="_blank"
@@ -76,7 +76,7 @@ const AppBar = () => {
             </svg>
           </a>
           <a 
-            href="mailto:lamruanolaura@gmail.com" 
+            href="mailto:lauraestherlamruano@gmail.com"
             className="icon-btn"
             aria-label={t.accessibility.email}
           >
