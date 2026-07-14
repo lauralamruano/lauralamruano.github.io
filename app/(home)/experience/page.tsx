@@ -2,6 +2,7 @@
 
 import React from "react";
 import { ExperienceItem } from "@/components/experience-item";
+import { ContrastChecker } from "@/components/ContrastChecker";
 import { Reveal } from "@/components/Reveal";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -93,6 +94,9 @@ const Experience = () => {
                   </>
                 }
               />
+              <div className="md:ml-[13rem]">
+                <ContrastChecker />
+              </div>
             </Reveal>
 
             {/* Download Resume Button */}

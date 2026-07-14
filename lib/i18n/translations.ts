@@ -85,6 +85,30 @@ export interface Translations {
         tasks: string[];
       };
     };
+    contrastChecker: {
+      title: string;
+      subtitle: string;
+      backgroundLabel: string;
+      textLabel: string;
+      sampleText: string;
+      ratioLabel: string;
+      aaLarge: string;
+      aaNormal: string;
+      aaa: string;
+      okNote: string;
+      bugNote: string;
+      colors: {
+        celeste: string;
+        esmeralda: string;
+        blanco: string;
+        white: string;
+        black: string;
+        muted: string;
+        accent: string;
+        secondary: string;
+        lightGray: string;
+      };
+    };
   };
   skills: {
     title: string;
@@ -259,6 +283,30 @@ export const translations: Record<Language, Translations> = {
           ],
         },
       },
+      contrastChecker: {
+        title: 'WCAG Contrast Checker',
+        subtitle: 'As an Accessibility Tester, this is exactly the kind of issue I audit every day. Pick a background and try different text colors.',
+        backgroundLabel: '1. Pick a background color',
+        textLabel: '2. Try a text color',
+        sampleText: 'This is a sample text',
+        ratioLabel: 'contrast ratio',
+        aaLarge: 'AA · Large text (3:1)',
+        aaNormal: 'AA · Normal text (4.5:1)',
+        aaa: 'AAA · High level (7:1)',
+        okNote: 'Good combination — this text would be readable for most users.',
+        bugNote: 'This is a real accessibility bug: insufficient contrast is one of the most common findings in WCAG audits.',
+        colors: {
+          celeste: 'Sky blue',
+          esmeralda: 'Emerald',
+          blanco: 'White',
+          white: 'White',
+          black: 'Black',
+          muted: "Gray (the site's secondary text)",
+          accent: 'Dark sky blue',
+          secondary: 'Dark emerald',
+          lightGray: 'Light gray',
+        },
+      },
     },
     skills: {
       title: 'Skills',
@@ -431,6 +479,30 @@ export const translations: Record<Language, Translations> = {
           ],
         },
       },
+      contrastChecker: {
+        title: 'Detector de Contraste WCAG',
+        subtitle: 'Como Accessibility Tester, este es exactamente el tipo de problema que audito a diario. Elegí un fondo y probá distintos colores de texto.',
+        backgroundLabel: '1. Elegí un color de fondo',
+        textLabel: '2. Probá un color de texto',
+        sampleText: 'Este es un texto de ejemplo',
+        ratioLabel: 'ratio de contraste',
+        aaLarge: 'AA · Texto grande (3:1)',
+        aaNormal: 'AA · Texto normal (4.5:1)',
+        aaa: 'AAA · Nivel alto (7:1)',
+        okNote: 'Buena combinación — este texto sería legible para la mayoría de las personas usuarias.',
+        bugNote: 'Este es un bug de accesibilidad real: el contraste insuficiente es uno de los hallazgos más comunes en auditorías WCAG.',
+        colors: {
+          celeste: 'Celeste',
+          esmeralda: 'Esmeralda',
+          blanco: 'Blanco',
+          white: 'Blanco',
+          black: 'Negro',
+          muted: 'Gris (texto secundario del sitio)',
+          accent: 'Celeste oscuro',
+          secondary: 'Esmeralda oscuro',
+          lightGray: 'Gris claro',
+        },
+      },
     },
     skills: {
       title: 'Habilidades',
@@ -601,6 +673,30 @@ export const translations: Record<Language, Translations> = {
             'Ho mantenuto ed eseguito suite di test di regressione. Ho eseguito testing Beta e gestione difetti.',
             'Ho fornito raccomandazioni su aree per automazione casi di test.',
           ],
+        },
+      },
+      contrastChecker: {
+        title: 'Verificatore di Contrasto WCAG',
+        subtitle: 'Come Accessibility Tester, questo è esattamente il tipo di problema che verifico ogni giorno. Scegli uno sfondo e prova diversi colori di testo.',
+        backgroundLabel: '1. Scegli un colore di sfondo',
+        textLabel: '2. Prova un colore di testo',
+        sampleText: 'Questo è un testo di esempio',
+        ratioLabel: 'rapporto di contrasto',
+        aaLarge: 'AA · Testo grande (3:1)',
+        aaNormal: 'AA · Testo normale (4.5:1)',
+        aaa: 'AAA · Livello alto (7:1)',
+        okNote: 'Buona combinazione — questo testo sarebbe leggibile per la maggior parte degli utenti.',
+        bugNote: "Questo è un bug di accessibilità reale: il contrasto insufficiente è uno dei riscontri più comuni negli audit WCAG.",
+        colors: {
+          celeste: 'Azzurro',
+          esmeralda: 'Smeraldo',
+          blanco: 'Bianco',
+          white: 'Bianco',
+          black: 'Nero',
+          muted: 'Grigio (testo secondario del sito)',
+          accent: 'Azzurro scuro',
+          secondary: 'Smeraldo scuro',
+          lightGray: 'Grigio chiaro',
         },
       },
     },
