@@ -181,7 +181,7 @@ const SkillsPage = () => {
             {/* Programming Languages Section - Carousel for overflow */}
             <section>
               <div className="flex items-center gap-3 mb-8">
-                <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
+                <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                   code
                 </span>
                 <h2 className="text-2xl font-bold uppercase tracking-widest text-sm" style={{ color: 'rgb(var(--text))' }}>
@@ -221,7 +221,7 @@ const SkillsPage = () => {
                       className="card p-4 rounded-xl flex flex-col items-center gap-3 transition-all duration-200 hover:border-primary/40 min-w-[120px] lg:min-w-0"
                       style={{ backgroundColor: 'rgb(var(--surface))' }}
                     >
-                      <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm" style={{ backgroundColor: 'rgb(var(--accent))' }}>
+                      <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm" style={{ backgroundColor: 'rgb(var(--secondary))' }}>
                         {lang.name === "Python" && (
                           <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>code</span>
                         )}
@@ -305,7 +305,7 @@ const SkillsPage = () => {
             {/* Frameworks & Libraries Section - Carousel for overflow */}
             <section>
               <div className="flex items-center gap-3 mb-8">
-                <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
+                <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                   layers
                 </span>
                 <h2 className="text-2xl font-bold uppercase tracking-widest text-sm" style={{ color: 'rgb(var(--text))' }}>
@@ -344,7 +344,7 @@ const SkillsPage = () => {
                       className="card p-4 rounded-xl flex flex-col items-center gap-3 transition-all duration-200 hover:border-primary/40 min-w-[140px] lg:min-w-0"
                       style={{ backgroundColor: 'rgb(var(--surface))' }}
                     >
-                      <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--accent))', filter: 'grayscale(1)' }}>
+                      <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--secondary))', filter: 'grayscale(1)' }}>
                         {framework.name === "React" && (
                           <span className="material-symbols-outlined text-lg" style={{ color: 'white' }}>hexagon</span>
                         )}
@@ -418,7 +418,7 @@ const SkillsPage = () => {
             {/* Operating Systems Section */}
             <section>
               <div className="flex items-center gap-3 mb-8">
-                <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
+                <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                   computer
                 </span>
                 <h2 className="text-2xl font-bold uppercase tracking-widest text-sm" style={{ color: 'rgb(var(--text))' }}>
@@ -433,7 +433,7 @@ const SkillsPage = () => {
                     className="card p-6 rounded-xl flex flex-col items-center justify-center transition-all duration-200 hover:border-primary/40 min-h-[140px]"
                     style={{ backgroundColor: 'rgb(var(--surface))' }}
                   >
-                    <div className="w-12 h-12 mb-3 rounded-lg flex items-center justify-center text-white transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--accent))', filter: 'grayscale(1)' }}>
+                    <div className="w-12 h-12 mb-3 rounded-lg flex items-center justify-center text-white transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--secondary))', filter: 'grayscale(1)' }}>
                       {system.name === "Windows" && (
                         <span className="material-symbols-outlined text-2xl" style={{ color: 'white' }}>desktop_windows</span>
                       )}
@@ -495,7 +495,7 @@ const SkillsPage = () => {
 
               <section>
                 <div className="flex items-center gap-3 mb-8">
-                  <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
+                  <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                     school
                   </span>
                   <h2 className="text-2xl font-bold uppercase tracking-widest text-sm" style={{ color: 'rgb(var(--text))' }}>
@@ -523,8 +523,8 @@ const SkillsPage = () => {
                           }
                         `}
                         style={{
-                          backgroundColor: edu.isActive ? 'rgb(var(--accent))' : 'rgb(var(--surface))',
-                          borderColor: edu.isActive ? 'rgb(var(--accent))' : 'rgb(var(--border))'
+                          backgroundColor: edu.isActive ? 'rgb(var(--secondary))' : 'rgb(var(--surface))',
+                          borderColor: edu.isActive ? 'rgb(var(--secondary))' : 'rgb(var(--border))'
                         }}
                       >
                         <span className="material-symbols-outlined text-sm">
@@ -536,9 +536,9 @@ const SkillsPage = () => {
                         className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-theme shadow-sm"
                         style={{ backgroundColor: 'rgb(var(--surface))' }}
                       >
-                        <time 
+                        <time
                           className="font-medium text-xs mb-1 block"
-                          style={{ color: 'rgb(var(--accent))' }}
+                          style={{ color: 'rgb(var(--secondary))' }}
                         >
                           {edu.period}
                         </time>

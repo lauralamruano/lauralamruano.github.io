@@ -25,14 +25,14 @@ const HomePage = () => {
                   priority
                 />
               </div>
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
                 <span className="material-symbols-outlined text-white text-sm">verified</span>
               </div>
             </div>
-            
+
             <div className="text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6" style={{ color: 'rgb(var(--text))' }}>
-                Laura Lam <span className="text-primary">|</span> Project Manager
+                Laura Lam <span className="text-secondary">|</span> <span className="text-primary">Project Manager</span>
               </h1>
               <p className="text-2xl md:text-3xl font-light mb-8 max-w-2xl" style={{ color: 'rgb(var(--muted))' }}>
                 {t.home.subtitle}
@@ -74,7 +74,7 @@ const HomePage = () => {
                 <div className="text-sm text-muted">{t.home.aboutMe.yearsExperience}</div>
               </div>
               <div className="card text-center">
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
+                <div className="text-3xl font-bold text-secondary mb-2">100%</div>
                 <div className="text-sm text-muted">{t.home.aboutMe.clientSatisfaction}</div>
               </div>
             </div>
@@ -103,8 +103,8 @@ const HomePage = () => {
             
             <div className="group">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--accent) / 0.1)' }}>
-                  <span className="material-symbols-outlined text-primary">psychology</span>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--secondary) / 0.1)' }}>
+                  <span className="material-symbols-outlined text-secondary">psychology</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2" style={{ color: 'rgb(var(--text))' }}>{t.home.coreCompetencies.productStrategy.title}</h3>
@@ -127,8 +127,8 @@ const HomePage = () => {
             
             <div className="group">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--accent) / 0.1)' }}>
-                  <span className="material-symbols-outlined text-primary">trending_up</span>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--secondary) / 0.1)' }}>
+                  <span className="material-symbols-outlined text-secondary">trending_up</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2" style={{ color: 'rgb(var(--text))' }}>{t.home.coreCompetencies.growthFocus.title}</h3>

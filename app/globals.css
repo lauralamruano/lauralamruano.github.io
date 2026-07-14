@@ -8,30 +8,32 @@
 @layer base {
   :root {
     /* Light theme colors */
-    --bg: 250 250 250;
+    --bg: 247 250 252;
     --surface: 255 255 255;
     --text: 15 23 42;
     --muted: 100 116 139;
     --border: 226 232 240;
-    --accent: 255 64 129;
+    --accent: 3 105 161;
     --accentText: 255 255 255;
-    --focusRing: 255 64 129;
+    --focusRing: 3 105 161;
     --cardBg: 255 255 255;
-    --navBg: 250 250 250;
+    --navBg: 247 250 252;
+    --secondary: 4 120 87;
   }
 
   [data-theme='dark'] {
     /* Dark theme colors */
-    --bg: 18 18 18;
-    --surface: 30 30 30;
+    --bg: 11 18 32;
+    --surface: 17 24 39;
     --text: 248 250 252;
     --muted: 148 163 184;
-    --border: 51 65 85;
-    --accent: 255 64 129;
-    --accentText: 255 255 255;
-    --focusRing: 255 64 129;
-    --cardBg: 30 30 30;
-    --navBg: 18 18 18;
+    --border: 30 41 59;
+    --accent: 56 189 248;
+    --accentText: 15 23 42;
+    --focusRing: 56 189 248;
+    --cardBg: 17 24 39;
+    --navBg: 11 18 32;
+    --secondary: 52 211 153;
   }
 
   * {
@@ -279,6 +281,10 @@
 
   .text-primary {
     color: rgb(var(--accent));
+  }
+
+  .text-secondary {
+    color: rgb(var(--secondary));
   }
 
   .border-theme {
