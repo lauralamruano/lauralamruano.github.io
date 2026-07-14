@@ -55,6 +55,8 @@ module.exports = {
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
         "slide-up": "slideUp 0.6s ease-out",
+        "float-slow": "float 9s ease-in-out infinite",
+        "float-slower": "float 12s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -64,6 +66,10 @@ module.exports = {
         slideUp: {
           "0%": { transform: "translateY(10px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(3%, -4%) scale(1.05)" },
         },
       },
     },

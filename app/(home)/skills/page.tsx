@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Reveal } from "@/components/Reveal";
 
 const SkillsPage = () => {
   const { t } = useLanguage();
@@ -144,7 +145,7 @@ const SkillsPage = () => {
 
           <div className="space-y-16">
             {/* Product Management & Strategy Section */}
-            <section>
+            <Reveal><section>
               <div className="flex items-center gap-3 mb-8">
                 <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
                   rocket_launch
@@ -176,10 +177,10 @@ const SkillsPage = () => {
                   </div>
                 ))}
               </div>
-            </section>
+            </section></Reveal>
 
             {/* Programming Languages Section - Carousel for overflow */}
-            <section>
+            <Reveal><section>
               <div className="flex items-center gap-3 mb-8">
                 <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                   code
@@ -218,7 +219,7 @@ const SkillsPage = () => {
                   {programmingLanguages.map((lang, index) => (
                     <div 
                       key={index}
-                      className="card p-4 rounded-xl flex flex-col items-center gap-3 transition-all duration-200 hover:border-primary/40 min-w-[120px] lg:min-w-0"
+                      className="card p-4 rounded-xl flex flex-col items-center gap-3 transition-all duration-200 hover:border-primary/40 hover:-translate-y-1 min-w-[120px] lg:min-w-0"
                       style={{ backgroundColor: 'rgb(var(--surface))' }}
                     >
                       <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm" style={{ backgroundColor: 'rgb(var(--secondary))' }}>
@@ -254,10 +255,10 @@ const SkillsPage = () => {
                   ))}
                 </div>
               </div>
-            </section>
+            </section></Reveal>
 
             {/* Tools & Analytics Section */}
-            <section>
+            <Reveal><section>
               <div className="flex items-center gap-3 mb-8">
                 <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
                   build
@@ -271,7 +272,7 @@ const SkillsPage = () => {
                 {tools.map((tool, index) => (
                   <div 
                     key={index}
-                    className="card p-6 rounded-xl flex flex-col items-center justify-center group transition-all duration-200 hover:border-primary/40"
+                    className="card p-6 rounded-xl flex flex-col items-center justify-center group transition-all duration-200 hover:border-primary/40 hover:-translate-y-1"
                     style={{ backgroundColor: 'rgb(var(--surface))' }}
                   >
                     <div className="w-10 h-10 mb-4 rounded flex items-center justify-center text-white transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--accent))', filter: 'grayscale(1)' }}>
@@ -300,10 +301,10 @@ const SkillsPage = () => {
                   </div>
                 ))}
               </div>
-            </section>
+            </section></Reveal>
 
             {/* Frameworks & Libraries Section - Carousel for overflow */}
-            <section>
+            <Reveal><section>
               <div className="flex items-center gap-3 mb-8">
                 <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                   layers
@@ -341,7 +342,7 @@ const SkillsPage = () => {
                   {frameworks.map((framework, index) => (
                     <div 
                       key={index}
-                      className="card p-4 rounded-xl flex flex-col items-center gap-3 transition-all duration-200 hover:border-primary/40 min-w-[140px] lg:min-w-0"
+                      className="card p-4 rounded-xl flex flex-col items-center gap-3 transition-all duration-200 hover:border-primary/40 hover:-translate-y-1 min-w-[140px] lg:min-w-0"
                       style={{ backgroundColor: 'rgb(var(--surface))' }}
                     >
                       <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--secondary))', filter: 'grayscale(1)' }}>
@@ -371,10 +372,10 @@ const SkillsPage = () => {
                   ))}
                 </div>
               </div>
-            </section>
+            </section></Reveal>
 
             {/* Design Patterns & Best Practices Section */}
-            <section>
+            <Reveal><section>
               <div className="flex items-center gap-3 mb-8">
                 <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
                   architecture
@@ -388,7 +389,7 @@ const SkillsPage = () => {
                 {patterns.map((pattern, index) => (
                   <div 
                     key={index}
-                    className="card p-6 rounded-xl transition-all duration-200 hover:border-primary/40"
+                    className="card p-6 rounded-xl transition-all duration-200 hover:border-primary/40 hover:-translate-y-1"
                     style={{ backgroundColor: 'rgb(var(--surface))' }}
                   >
                     <div className="flex items-center gap-3 mb-4">
@@ -413,10 +414,10 @@ const SkillsPage = () => {
                   </div>
                 ))}
               </div>
-            </section>
+            </section></Reveal>
 
             {/* Operating Systems Section */}
-            <section>
+            <Reveal><section>
               <div className="flex items-center gap-3 mb-8">
                 <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                   computer
@@ -430,7 +431,7 @@ const SkillsPage = () => {
                 {systems.map((system, index) => (
                   <div 
                     key={index}
-                    className="card p-6 rounded-xl flex flex-col items-center justify-center transition-all duration-200 hover:border-primary/40 min-h-[140px]"
+                    className="card p-6 rounded-xl flex flex-col items-center justify-center transition-all duration-200 hover:border-primary/40 hover:-translate-y-1 min-h-[140px]"
                     style={{ backgroundColor: 'rgb(var(--surface))' }}
                   >
                     <div className="w-12 h-12 mb-3 rounded-lg flex items-center justify-center text-white transition-all group-hover:grayscale-0" style={{ backgroundColor: 'rgb(var(--secondary))', filter: 'grayscale(1)' }}>
@@ -447,11 +448,11 @@ const SkillsPage = () => {
                   </div>
                 ))}
               </div>
-            </section>
+            </section></Reveal>
 
             {/* Languages and Education Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-              <section>
+              <Reveal><section>
                 <div className="flex items-center gap-3 mb-8">
                   <span className="material-symbols-outlined text-primary text-3xl" aria-hidden="true">
                     language
@@ -491,9 +492,9 @@ const SkillsPage = () => {
                     </div>
                   ))}
                 </div>
-              </section>
+              </section></Reveal>
 
-              <section>
+              <Reveal delay={100}><section>
                 <div className="flex items-center gap-3 mb-8">
                   <span className="material-symbols-outlined text-secondary text-3xl" aria-hidden="true">
                     school
@@ -552,7 +553,7 @@ const SkillsPage = () => {
                     </div>
                   ))}
                 </div>
-              </section>
+              </section></Reveal>
             </div>
           </div>
         </div>

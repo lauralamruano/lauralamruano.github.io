@@ -104,7 +104,7 @@
     position: absolute;
     filter: blur(80px);
     z-index: -1;
-    opacity: 0.12;
+    opacity: 0.18;
   }
 
   /* Card component */
@@ -118,16 +118,19 @@
 
   .card:hover {
     border-color: rgb(var(--accent) / 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -12px rgb(var(--text) / 0.18);
   }
 
   /* Button component */
   .btn-primary {
-    background-color: rgb(var(--accent));
+    background-image: linear-gradient(135deg, rgb(var(--accent)), rgb(var(--secondary)));
     color: rgb(var(--accentText));
     padding: 0.75rem 1.5rem;
     font-weight: 600;
     border-radius: 0.5rem;
     border: none;
+    box-shadow: 0 8px 20px -8px rgb(var(--accent) / 0.45);
     transition: all 0.2s ease;
     transform: scale(1);
   }

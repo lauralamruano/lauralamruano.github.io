@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Reveal } from "@/components/Reveal";
 
 import me from "../../assets/images/avatar.png";
 
@@ -13,7 +14,7 @@ const HomePage = () => {
     <main className="lg:ml-72 flex-1 relative">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20">
-        <div className="max-w-4xl">
+        <Reveal className="max-w-4xl">
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-12">
             <div className="relative">
               <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-primary/20">
@@ -39,27 +40,27 @@ const HomePage = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <Link 
+            <Link
               href="/experience"
               className="btn-primary"
             >
               {t.home.viewExperience}
             </Link>
-            <Link 
+            <Link
               href="#contact"
               className="btn-secondary"
             >
               {t.home.getInTouch}
             </Link>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* About Section */}
       <section className="px-6 md:px-12 lg:px-24 py-24 bg-surface" id="about">
-        <div className="max-w-4xl">
+        <Reveal className="max-w-4xl">
           <h2 className="section-heading">{t.home.aboutMe.title}</h2>
           <div className="space-y-6 text-lg leading-relaxed" style={{ color: 'rgb(var(--muted))' }}>
             <p>
@@ -69,29 +70,31 @@ const HomePage = () => {
               {t.home.aboutMe.paragraph2}
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-12">
-              <div className="card text-center">
+              <Reveal delay={100} className="card text-center">
                 <div className="text-3xl font-bold text-primary mb-2">3+</div>
                 <div className="text-sm text-muted">{t.home.aboutMe.yearsExperience}</div>
-              </div>
-              <div className="card text-center">
+              </Reveal>
+              <Reveal delay={200} className="card text-center">
                 <div className="text-3xl font-bold text-secondary mb-2">100%</div>
                 <div className="text-sm text-muted">{t.home.aboutMe.clientSatisfaction}</div>
-              </div>
+              </Reveal>
             </div>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* Quick Stats Section */}
       <section className="px-6 md:px-12 lg:px-24 py-24">
         <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12 text-center" style={{ color: 'rgb(var(--text))' }}>
-            {t.home.coreCompetencies.title}
-          </h2>
+          <Reveal>
+            <h2 className="text-3xl font-bold mb-12 text-center" style={{ color: 'rgb(var(--text))' }}>
+              {t.home.coreCompetencies.title}
+            </h2>
+          </Reveal>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="group">
+            <Reveal delay={0} className="group">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--accent) / 0.1)' }}>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-all group-hover:scale-110" style={{ backgroundColor: 'rgb(var(--accent) / 0.1)' }}>
                   <span className="material-symbols-outlined text-primary">code</span>
                 </div>
                 <div>
@@ -99,11 +102,11 @@ const HomePage = () => {
                   <p className="text-muted">{t.home.coreCompetencies.technicalExcellence.description}</p>
                 </div>
               </div>
-            </div>
-            
-            <div className="group">
+            </Reveal>
+
+            <Reveal delay={100} className="group">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--secondary) / 0.1)' }}>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-all group-hover:scale-110" style={{ backgroundColor: 'rgb(var(--secondary) / 0.1)' }}>
                   <span className="material-symbols-outlined text-secondary">psychology</span>
                 </div>
                 <div>
@@ -111,11 +114,11 @@ const HomePage = () => {
                   <p className="text-muted">{t.home.coreCompetencies.productStrategy.description}</p>
                 </div>
               </div>
-            </div>
-            
-            <div className="group">
+            </Reveal>
+
+            <Reveal delay={200} className="group">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--accent) / 0.1)' }}>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-all group-hover:scale-110" style={{ backgroundColor: 'rgb(var(--accent) / 0.1)' }}>
                   <span className="material-symbols-outlined text-primary">groups</span>
                 </div>
                 <div>
@@ -123,11 +126,11 @@ const HomePage = () => {
                   <p className="text-muted">{t.home.coreCompetencies.teamLeadership.description}</p>
                 </div>
               </div>
-            </div>
-            
-            <div className="group">
+            </Reveal>
+
+            <Reveal delay={300} className="group">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: 'rgb(var(--secondary) / 0.1)' }}>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-all group-hover:scale-110" style={{ backgroundColor: 'rgb(var(--secondary) / 0.1)' }}>
                   <span className="material-symbols-outlined text-secondary">trending_up</span>
                 </div>
                 <div>
@@ -135,14 +138,14 @@ const HomePage = () => {
                   <p className="text-muted">{t.home.coreCompetencies.growthFocus.description}</p>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
       <section className="px-6 md:px-12 lg:px-24 py-32" id="contact">
-        <div className="max-w-4xl text-center">
+        <Reveal className="max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-8 text-center" style={{ color: 'rgb(var(--text))' }}>{t.home.contact.title}</h2>
           <p className="text-xl mb-12 text-center" style={{ color: 'rgb(var(--muted))' }}>
             {t.home.contact.subtitle}
@@ -191,7 +194,7 @@ const HomePage = () => {
               </svg>
             </a>
           </div>
-        </div>
+        </Reveal>
       </section>
     </main>
   );
