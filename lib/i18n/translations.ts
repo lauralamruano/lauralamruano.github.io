@@ -5,6 +5,90 @@ export interface Translations {
     about: string;
     experience: string;
     skills: string;
+    projects: string;
+    publications: string;
+  };
+  publications: {
+    title: string;
+    subtitle: string;
+    viewOnLinkedin: string;
+    empty: string;
+  };
+  projects: {
+    title: string;
+    subtitle: string;
+    filters: {
+      product: string;
+      accessibility: string;
+      frontend: string;
+    };
+    featured: {
+      a11yAudit: { tag: string; title: string; description: string; cta: string };
+      ecommerce: { tag: string; title: string; description: string; cta: string };
+    };
+    techLabel: string;
+    resultsLabel: string;
+    cards: {
+      designSystem: { title: string; tech: string; results: string };
+      jobPortal: { title: string; tech: string; results: string };
+      dataDashboard: { title: string; tech: string; results: string };
+    };
+    liveDemo: {
+      badge: string;
+      title: string;
+      description: string;
+    };
+    challenge: {
+      progress: string;
+      checkButton: string;
+      nextButton: string;
+      prevButton: string;
+      restartButton: string;
+      correct: string;
+      incorrect: string;
+      linkPurpose: {
+        eyebrow: string;
+        question: string;
+        options: { before: string; linkText: string; after: string }[];
+        explanation: string;
+      };
+      beyondColor: {
+        eyebrow: string;
+        question: string;
+        hint: string;
+        chips: string[];
+        explanation: string;
+      };
+      contrast: {
+        eyebrow: string;
+        question: string;
+        hint: string;
+        ratioLabel: string;
+        passLabel: string;
+        failLabel: string;
+        explanation: string;
+      };
+      result: {
+        eyebrow: string;
+        title: string;
+        scoreSuffix: string;
+        high: string;
+        mid: string;
+        low: string;
+        cta: string;
+      };
+    };
+    github: {
+      title: string;
+      repos: { name: string; meta: string; description: string }[];
+      viewProfile: string;
+    };
+    optimization: {
+      title: string;
+      beforeLabel: string;
+      afterLabel: string;
+      flows: { title: string; before: string; after: string }[];
+    };
   };
   home: {
     title: string;
@@ -85,6 +169,30 @@ export interface Translations {
         tasks: string[];
       };
     };
+    contrastChecker: {
+      title: string;
+      subtitle: string;
+      backgroundLabel: string;
+      textLabel: string;
+      sampleText: string;
+      ratioLabel: string;
+      aaLarge: string;
+      aaNormal: string;
+      aaa: string;
+      okNote: string;
+      bugNote: string;
+      colors: {
+        celeste: string;
+        esmeralda: string;
+        blanco: string;
+        white: string;
+        black: string;
+        muted: string;
+        accent: string;
+        secondary: string;
+        lightGray: string;
+      };
+    };
   };
   skills: {
     title: string;
@@ -146,6 +254,122 @@ export const translations: Record<Language, Translations> = {
       about: 'About',
       experience: 'Experience',
       skills: 'Skills',
+      projects: 'Projects',
+      publications: 'Publications',
+    },
+    publications: {
+      title: 'Publications',
+      subtitle: 'Thoughts on accessibility, product, and inclusive design — straight from my LinkedIn.',
+      viewOnLinkedin: 'View on LinkedIn',
+      empty: 'Posts are loading from LinkedIn. If they do not appear, view them directly on LinkedIn.',
+    },
+    projects: {
+      title: 'Projects',
+      subtitle: 'A selection of accessibility-driven products, design systems, and optimization work — each shipped with measurable outcomes.',
+      filters: {
+        product: 'Product',
+        accessibility: 'Accessibility',
+        frontend: 'Frontend',
+      },
+      featured: {
+        a11yAudit: {
+          tag: 'accessibility',
+          title: 'A11y Audit Platform Redesign',
+          description: 'End-to-end accessibility overhaul. WCAG 2.1 AA compliancy.',
+          cta: 'View Case Study',
+        },
+        ecommerce: {
+          tag: 'product',
+          title: 'User-Centric E-commerce Flow',
+          description: 'Improved checkout conversion with streamlined UX.',
+          cta: 'View Case Study',
+        },
+      },
+      techLabel: 'Tech',
+      resultsLabel: 'Results',
+      cards: {
+        designSystem: {
+          title: 'Design System Initiative',
+          tech: 'Figma, React',
+          results: '+30% Dev Efficiency',
+        },
+        jobPortal: {
+          title: 'Inclusive Job Portal',
+          tech: 'Vue.js, Python',
+          results: '+15% Applicant Diversity',
+        },
+        dataDashboard: {
+          title: 'Data Dashboard Optimization',
+          tech: 'Angular, Node.js',
+          results: '50% Faster Load Time',
+        },
+      },
+      liveDemo: {
+        badge: 'Interactive Test',
+        title: 'Test your digital accessibility skills',
+        description: 'A 3-challenge mini-game inspired by real audit findings — spot the accessible option and get instant feedback on each answer.',
+      },
+      challenge: {
+        progress: 'Challenge {n} of {total}',
+        checkButton: 'Check answer',
+        nextButton: 'Next',
+        prevButton: 'Back',
+        restartButton: 'Try again',
+        correct: 'Correct!',
+        incorrect: 'Not quite',
+        linkPurpose: {
+          eyebrow: 'Link purpose',
+          question: 'Pick the link whose text is descriptive and makes sense on its own (without reading the surrounding text).',
+          options: [
+            { before: '', linkText: 'Create a new ticket', after: ' in the corporate Jira account.' },
+            { before: '', linkText: 'Here', after: ' you can create a new ticket.' },
+            { before: 'You can create a new ticket ', linkText: 'https://inlearning.atlassian.net/browse/UTPW-929?atlOrgin=ey', after: '' },
+          ],
+          explanation: 'Screen-reader users often browse a list of links out of context. "Create a new ticket" states the destination on its own — "Here" and a raw URL do not.',
+        },
+        beyondColor: {
+          eyebrow: 'Not color alone',
+          question: 'Which elements help you convey important information (like errors or instructions) without relying on color alone?',
+          hint: 'Select the two correct options.',
+          chips: ['Descriptive text', 'Icon', 'Animation', 'Text size', 'Underline'],
+          explanation: 'A descriptive text label plus a supporting icon convey meaning to everyone, including color-blind users. Animation and size alone are not reliable cues.',
+        },
+        contrast: {
+          eyebrow: 'Contrast',
+          question: 'Using the contrast checker, find the tone that meets the minimum contrast required by WCAG for normal text (4.5:1) against white text.',
+          hint: 'Drag the white circle — or use the arrow keys — onto a tone that reaches the minimum contrast.',
+          ratioLabel: 'WCAG contrast ratio',
+          passLabel: 'Meets AA (4.5:1)',
+          failLabel: 'Below AA',
+          explanation: 'For normal text, WCAG AA requires a contrast ratio of at least 4.5:1. Lighter tints fail against white text, so you need a darker shade.',
+        },
+        result: {
+          eyebrow: 'Your result',
+          title: 'How did you do?',
+          scoreSuffix: 'of 3 challenges',
+          high: 'Excellent — you have a sharp eye for accessibility.',
+          mid: 'Good start — a few of these trip up most teams.',
+          low: 'Accessibility is subtle, and that is exactly the point.',
+          cta: 'These are the everyday issues I help teams catch and fix — turning WCAG compliance into a repeatable part of the product process, not a last-minute audit.',
+        },
+      },
+      github: {
+        title: 'GitHub Repos',
+        repos: [
+          { name: 'LauraLam/A11y-Toolkit', meta: '1.2k stars', description: 'Accessibility auditing tools.' },
+          { name: 'LauraLam/React-Accessible-Components', meta: '500 forks', description: 'Reusable components.' },
+        ],
+        viewProfile: 'View Profile',
+      },
+      optimization: {
+        title: 'Optimization Flows',
+        beforeLabel: 'Before',
+        afterLabel: 'After',
+        flows: [
+          { title: 'Checkout Process', before: '5 steps, 120s', after: '3 steps, 72s (-40% Time)' },
+          { title: 'Search Result Page', before: 'High Bounce Rate', after: 'Improved Relevance (+25% Engagement)' },
+        ],
+      },
     },
     home: {
       title: 'Laura Lam | Project Manager',
@@ -259,6 +483,30 @@ export const translations: Record<Language, Translations> = {
           ],
         },
       },
+      contrastChecker: {
+        title: 'WCAG Contrast Checker',
+        subtitle: 'As an Accessibility Tester, this is exactly the kind of issue I audit every day. Pick a background and try different text colors.',
+        backgroundLabel: '1. Pick a background color',
+        textLabel: '2. Try a text color',
+        sampleText: 'This is a sample text',
+        ratioLabel: 'contrast ratio',
+        aaLarge: 'AA · Large text (3:1)',
+        aaNormal: 'AA · Normal text (4.5:1)',
+        aaa: 'AAA · High level (7:1)',
+        okNote: 'Good combination — this text would be readable for most users.',
+        bugNote: 'This is a real accessibility bug: insufficient contrast is one of the most common findings in WCAG audits.',
+        colors: {
+          celeste: 'Sky blue',
+          esmeralda: 'Emerald',
+          blanco: 'White',
+          white: 'White',
+          black: 'Black',
+          muted: "Gray (the site's secondary text)",
+          accent: 'Dark sky blue',
+          secondary: 'Dark emerald',
+          lightGray: 'Light gray',
+        },
+      },
     },
     skills: {
       title: 'Skills',
@@ -318,6 +566,122 @@ export const translations: Record<Language, Translations> = {
       about: 'Acerca de',
       experience: 'Experiencia',
       skills: 'Habilidades',
+      projects: 'Proyectos',
+      publications: 'Publicaciones',
+    },
+    publications: {
+      title: 'Publicaciones',
+      subtitle: 'Reflexiones sobre accesibilidad, producto y diseño inclusivo — directamente desde mi LinkedIn.',
+      viewOnLinkedin: 'Ver en LinkedIn',
+      empty: 'Las publicaciones se están cargando desde LinkedIn. Si no aparecen, míralas directamente en LinkedIn.',
+    },
+    projects: {
+      title: 'Proyectos',
+      subtitle: 'Una selección de productos centrados en la accesibilidad, sistemas de diseño y trabajo de optimización — cada uno entregado con resultados medibles.',
+      filters: {
+        product: 'Producto',
+        accessibility: 'Accesibilidad',
+        frontend: 'Frontend',
+      },
+      featured: {
+        a11yAudit: {
+          tag: 'accessibility',
+          title: 'Rediseño de Plataforma de Auditoría A11y',
+          description: 'Revisión integral de accesibilidad. Conformidad WCAG 2.1 AA.',
+          cta: 'Ver Caso de Estudio',
+        },
+        ecommerce: {
+          tag: 'product',
+          title: 'Flujo de E-commerce Centrado en el Usuario',
+          description: 'Mejor conversión de pago con una experiencia simplificada.',
+          cta: 'Ver Caso de Estudio',
+        },
+      },
+      techLabel: 'Tecnología',
+      resultsLabel: 'Resultados',
+      cards: {
+        designSystem: {
+          title: 'Iniciativa de Sistema de Diseño',
+          tech: 'Figma, React',
+          results: '+30% Eficiencia de Desarrollo',
+        },
+        jobPortal: {
+          title: 'Portal de Empleo Inclusivo',
+          tech: 'Vue.js, Python',
+          results: '+15% Diversidad de Candidatos',
+        },
+        dataDashboard: {
+          title: 'Optimización de Panel de Datos',
+          tech: 'Angular, Node.js',
+          results: '50% Carga Más Rápida',
+        },
+      },
+      liveDemo: {
+        badge: 'Test Interactivo',
+        title: 'Evalúa tus habilidades en accesibilidad digital',
+        description: 'Un mini-juego de 3 retos inspirado en hallazgos reales de auditoría — detecta la opción accesible y recibe retroalimentación al instante.',
+      },
+      challenge: {
+        progress: 'Reto {n} de {total}',
+        checkButton: 'Comprobar',
+        nextButton: 'Siguiente',
+        prevButton: 'Anterior',
+        restartButton: 'Reintentar',
+        correct: '¡Correcto!',
+        incorrect: 'No exactamente',
+        linkPurpose: {
+          eyebrow: 'Propósito de los enlaces',
+          question: 'Selecciona el enlace cuyo texto es descriptivo y comprensible por sí mismo (sin necesidad de leer el texto que lo rodea).',
+          options: [
+            { before: '', linkText: 'Crear un nuevo ticket', after: ' en la cuenta corporativa de Jira.' },
+            { before: '', linkText: 'Aquí', after: ' puede crear un nuevo ticket.' },
+            { before: 'Puede crear un nuevo ticket ', linkText: 'https://inlearning.atlassian.net/browse/UTPW-929?atlOrgin=ey', after: '' },
+          ],
+          explanation: 'Las personas usuarias de lectores de pantalla suelen navegar los enlaces fuera de contexto. «Crear un nuevo ticket» indica el destino por sí solo — «Aquí» o una URL en crudo, no.',
+        },
+        beyondColor: {
+          eyebrow: 'No solo color',
+          question: '¿Cuáles elementos pueden ayudarte a transmitir información importante (como errores o instrucciones) sin depender únicamente del color?',
+          hint: 'Selecciona las dos opciones correctas.',
+          chips: ['Texto descriptivo', 'Icono', 'Animación', 'Tamaño de texto', 'Subrayado'],
+          explanation: 'Un texto descriptivo junto a un icono de apoyo transmiten el mensaje a todas las personas, incluidas las que no distinguen colores. La animación o el tamaño por sí solos no son pistas fiables.',
+        },
+        contrast: {
+          eyebrow: 'Contraste',
+          question: 'Usando el verificador de contraste, identifica el tono que cumple con el contraste mínimo requerido por WCAG para texto normal (4.5:1) sobre texto blanco.',
+          hint: 'Arrastra el círculo blanco —o usa las flechas del teclado— sobre un tono que alcance el contraste mínimo.',
+          ratioLabel: 'Ratio de contraste WCAG',
+          passLabel: 'Cumple AA (4.5:1)',
+          failLabel: 'No cumple AA',
+          explanation: 'Para texto normal, WCAG AA exige un ratio de contraste de al menos 4.5:1. Los tonos claros no cumplen sobre texto blanco, por eso necesitas un tono más oscuro.',
+        },
+        result: {
+          eyebrow: 'Tu resultado',
+          title: '¿Cómo te fue?',
+          scoreSuffix: 'de 3 retos',
+          high: 'Excelente — tienes buen ojo para la accesibilidad.',
+          mid: 'Buen comienzo — algunos de estos confunden a muchos equipos.',
+          low: 'La accesibilidad es sutil, y de eso se trata precisamente.',
+          cta: 'Estos son los problemas cotidianos que ayudo a los equipos a detectar y resolver — convirtiendo el cumplimiento de WCAG en parte repetible del proceso de producto, no en una auditoría de último minuto.',
+        },
+      },
+      github: {
+        title: 'Repositorios GitHub',
+        repos: [
+          { name: 'LauraLam/A11y-Toolkit', meta: '1.2k estrellas', description: 'Herramientas de auditoría de accesibilidad.' },
+          { name: 'LauraLam/React-Accessible-Components', meta: '500 forks', description: 'Componentes reutilizables.' },
+        ],
+        viewProfile: 'Ver Perfil',
+      },
+      optimization: {
+        title: 'Flujos de Optimización',
+        beforeLabel: 'Antes',
+        afterLabel: 'Después',
+        flows: [
+          { title: 'Proceso de Pago', before: '5 pasos, 120s', after: '3 pasos, 72s (-40% Tiempo)' },
+          { title: 'Página de Resultados', before: 'Alta Tasa de Rebote', after: 'Relevancia Mejorada (+25% Interacción)' },
+        ],
+      },
     },
     home: {
       title: 'Laura Lam | Project Manager',
@@ -431,6 +795,30 @@ export const translations: Record<Language, Translations> = {
           ],
         },
       },
+      contrastChecker: {
+        title: 'Detector de Contraste WCAG',
+        subtitle: 'Como Accessibility Tester, este es exactamente el tipo de problema que audito a diario. Elegí un fondo y probá distintos colores de texto.',
+        backgroundLabel: '1. Elegí un color de fondo',
+        textLabel: '2. Probá un color de texto',
+        sampleText: 'Este es un texto de ejemplo',
+        ratioLabel: 'ratio de contraste',
+        aaLarge: 'AA · Texto grande (3:1)',
+        aaNormal: 'AA · Texto normal (4.5:1)',
+        aaa: 'AAA · Nivel alto (7:1)',
+        okNote: 'Buena combinación — este texto sería legible para la mayoría de las personas usuarias.',
+        bugNote: 'Este es un bug de accesibilidad real: el contraste insuficiente es uno de los hallazgos más comunes en auditorías WCAG.',
+        colors: {
+          celeste: 'Celeste',
+          esmeralda: 'Esmeralda',
+          blanco: 'Blanco',
+          white: 'Blanco',
+          black: 'Negro',
+          muted: 'Gris (texto secundario del sitio)',
+          accent: 'Celeste oscuro',
+          secondary: 'Esmeralda oscuro',
+          lightGray: 'Gris claro',
+        },
+      },
     },
     skills: {
       title: 'Habilidades',
@@ -490,6 +878,122 @@ export const translations: Record<Language, Translations> = {
       about: 'Chi Sono',
       experience: 'Esperienza',
       skills: 'Competenze',
+      projects: 'Progetti',
+      publications: 'Pubblicazioni',
+    },
+    publications: {
+      title: 'Pubblicazioni',
+      subtitle: 'Riflessioni su accessibilità, prodotto e design inclusivo — direttamente dal mio LinkedIn.',
+      viewOnLinkedin: 'Vedi su LinkedIn',
+      empty: 'Le pubblicazioni si stanno caricando da LinkedIn. Se non compaiono, guardale direttamente su LinkedIn.',
+    },
+    projects: {
+      title: 'Progetti',
+      subtitle: 'Una selezione di prodotti orientati all\'accessibilità, design system e lavori di ottimizzazione — ciascuno rilasciato con risultati misurabili.',
+      filters: {
+        product: 'Prodotto',
+        accessibility: 'Accessibilità',
+        frontend: 'Frontend',
+      },
+      featured: {
+        a11yAudit: {
+          tag: 'accessibility',
+          title: 'Redesign della Piattaforma di Audit A11y',
+          description: 'Revisione completa dell\'accessibilità. Conformità WCAG 2.1 AA.',
+          cta: 'Vedi Caso di Studio',
+        },
+        ecommerce: {
+          tag: 'product',
+          title: 'Flusso E-commerce Incentrato sull\'Utente',
+          description: 'Migliore conversione al checkout con UX semplificata.',
+          cta: 'Vedi Caso di Studio',
+        },
+      },
+      techLabel: 'Tecnologia',
+      resultsLabel: 'Risultati',
+      cards: {
+        designSystem: {
+          title: 'Iniziativa Design System',
+          tech: 'Figma, React',
+          results: '+30% Efficienza di Sviluppo',
+        },
+        jobPortal: {
+          title: 'Portale di Lavoro Inclusivo',
+          tech: 'Vue.js, Python',
+          results: '+15% Diversità dei Candidati',
+        },
+        dataDashboard: {
+          title: 'Ottimizzazione Dashboard Dati',
+          tech: 'Angular, Node.js',
+          results: '50% Caricamento Più Veloce',
+        },
+      },
+      liveDemo: {
+        badge: 'Test Interattivo',
+        title: 'Valuta le tue competenze di accessibilità digitale',
+        description: 'Un mini-gioco di 3 sfide ispirato a veri risultati di audit — individua l\'opzione accessibile e ricevi un feedback immediato.',
+      },
+      challenge: {
+        progress: 'Sfida {n} di {total}',
+        checkButton: 'Verifica',
+        nextButton: 'Avanti',
+        prevButton: 'Indietro',
+        restartButton: 'Riprova',
+        correct: 'Corretto!',
+        incorrect: 'Non proprio',
+        linkPurpose: {
+          eyebrow: 'Scopo dei link',
+          question: 'Scegli il link il cui testo è descrittivo e comprensibile da solo (senza dover leggere il testo circostante).',
+          options: [
+            { before: '', linkText: 'Crea un nuovo ticket', after: ' nell\'account aziendale Jira.' },
+            { before: '', linkText: 'Qui', after: ' puoi creare un nuovo ticket.' },
+            { before: 'Puoi creare un nuovo ticket ', linkText: 'https://inlearning.atlassian.net/browse/UTPW-929?atlOrgin=ey', after: '' },
+          ],
+          explanation: 'Chi usa uno screen reader spesso naviga i link fuori contesto. «Crea un nuovo ticket» indica la destinazione da solo — «Qui» o un URL grezzo, no.',
+        },
+        beyondColor: {
+          eyebrow: 'Non solo il colore',
+          question: 'Quali elementi ti aiutano a trasmettere informazioni importanti (come errori o istruzioni) senza dipendere solo dal colore?',
+          hint: 'Seleziona le due opzioni corrette.',
+          chips: ['Testo descrittivo', 'Icona', 'Animazione', 'Dimensione del testo', 'Sottolineatura'],
+          explanation: 'Un testo descrittivo insieme a un\'icona di supporto trasmettono il messaggio a tutti, incluse le persone che non distinguono i colori. Animazione o dimensione da soli non sono indizi affidabili.',
+        },
+        contrast: {
+          eyebrow: 'Contrasto',
+          question: 'Usando il verificatore di contrasto, individua la tonalità che soddisfa il contrasto minimo richiesto da WCAG per il testo normale (4.5:1) su testo bianco.',
+          hint: 'Trascina il cerchio bianco —o usa le frecce della tastiera— su una tonalità che raggiunga il contrasto minimo.',
+          ratioLabel: 'Rapporto di contrasto WCAG',
+          passLabel: 'Soddisfa AA (4.5:1)',
+          failLabel: 'Sotto AA',
+          explanation: 'Per il testo normale, WCAG AA richiede un rapporto di contrasto di almeno 4.5:1. Le tonalità chiare non bastano su testo bianco, serve una tonalità più scura.',
+        },
+        result: {
+          eyebrow: 'Il tuo risultato',
+          title: 'Come è andata?',
+          scoreSuffix: 'di 3 sfide',
+          high: 'Eccellente — hai un ottimo occhio per l\'accessibilità.',
+          mid: 'Buon inizio — alcune di queste mettono in difficoltà molti team.',
+          low: 'L\'accessibilità è sottile, ed è proprio questo il punto.',
+          cta: 'Questi sono i problemi quotidiani che aiuto i team a individuare e risolvere — trasformando la conformità WCAG in una parte ripetibile del processo di prodotto, non in un audit dell\'ultimo minuto.',
+        },
+      },
+      github: {
+        title: 'Repository GitHub',
+        repos: [
+          { name: 'LauraLam/A11y-Toolkit', meta: '1.2k stelle', description: 'Strumenti di audit dell\'accessibilità.' },
+          { name: 'LauraLam/React-Accessible-Components', meta: '500 fork', description: 'Componenti riutilizzabili.' },
+        ],
+        viewProfile: 'Vedi Profilo',
+      },
+      optimization: {
+        title: 'Flussi di Ottimizzazione',
+        beforeLabel: 'Prima',
+        afterLabel: 'Dopo',
+        flows: [
+          { title: 'Processo di Checkout', before: '5 passaggi, 120s', after: '3 passaggi, 72s (-40% Tempo)' },
+          { title: 'Pagina dei Risultati', before: 'Alta Frequenza di Rimbalzo', after: 'Rilevanza Migliorata (+25% Coinvolgimento)' },
+        ],
+      },
     },
     home: {
       title: 'Laura Lam | Project Manager',
@@ -601,6 +1105,30 @@ export const translations: Record<Language, Translations> = {
             'Ho mantenuto ed eseguito suite di test di regressione. Ho eseguito testing Beta e gestione difetti.',
             'Ho fornito raccomandazioni su aree per automazione casi di test.',
           ],
+        },
+      },
+      contrastChecker: {
+        title: 'Verificatore di Contrasto WCAG',
+        subtitle: 'Come Accessibility Tester, questo è esattamente il tipo di problema che verifico ogni giorno. Scegli uno sfondo e prova diversi colori di testo.',
+        backgroundLabel: '1. Scegli un colore di sfondo',
+        textLabel: '2. Prova un colore di testo',
+        sampleText: 'Questo è un testo di esempio',
+        ratioLabel: 'rapporto di contrasto',
+        aaLarge: 'AA · Testo grande (3:1)',
+        aaNormal: 'AA · Testo normale (4.5:1)',
+        aaa: 'AAA · Livello alto (7:1)',
+        okNote: 'Buona combinazione — questo testo sarebbe leggibile per la maggior parte degli utenti.',
+        bugNote: "Questo è un bug di accessibilità reale: il contrasto insufficiente è uno dei riscontri più comuni negli audit WCAG.",
+        colors: {
+          celeste: 'Azzurro',
+          esmeralda: 'Smeraldo',
+          blanco: 'Bianco',
+          white: 'Bianco',
+          black: 'Nero',
+          muted: 'Grigio (testo secondario del sito)',
+          accent: 'Azzurro scuro',
+          secondary: 'Smeraldo scuro',
+          lightGray: 'Grigio chiaro',
         },
       },
     },

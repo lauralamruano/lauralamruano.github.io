@@ -33,7 +33,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
       <div className="absolute left-[158px] top-4 w-4 h-4 rounded-full border-4 border-white dark:border-slate-900 bg-slate-200 dark:bg-slate-700 hidden md:block z-10 group-hover:bg-primary transition-colors"></div>
       
       {/* Experience card */}
-      <div className="flex-grow bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex-grow bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
         <div className="flex flex-col gap-1 mb-4">
           <h3 className="text-xl font-bold text-slate-900 dark:text-white leading-tight">{position}</h3>
           <p className="text-lg text-slate-600 dark:text-slate-400">{company}</p>

@@ -22,8 +22,8 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
         
         {/* Background gradient shapes */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
-          <div className="gradient-shape bg-primary w-96 h-96 top-[-10%] left-[-5%] rounded-full"></div>
-          <div className="gradient-shape bg-primary w-[500px] h-[500px] bottom-[-10%] right-[-5%] rounded-full"></div>
+          <div className="gradient-shape bg-primary w-96 h-96 top-[-10%] left-[-5%] rounded-full animate-float-slow"></div>
+          <div className="gradient-shape bg-secondary w-[500px] h-[500px] bottom-[-10%] right-[-5%] rounded-full animate-float-slower"></div>
         </div>
         
         <div className="flex flex-col lg:flex-row min-h-screen">
