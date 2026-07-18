@@ -11,6 +11,8 @@ const AppBar = () => {
 
   const navItems = [
     { href: "/", label: t.navigation.about, icon: "person" },
+    { href: "/projects", label: t.navigation.projects, icon: "folder" },
+    { href: "/publications", label: t.navigation.publications, icon: "article" },
     { href: "/experience", label: t.navigation.experience, icon: "work" },
     { href: "/skills", label: t.navigation.skills, icon: "lightbulb" },
   ];
